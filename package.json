@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "test": "mocha tests --recursive --watch"
+  },    
   "devDependencies": {
-    "chai": "^3.4.0"
+    "chai": "^3.4.0",
+    "mocha": "^2.4.5"
   }
 }

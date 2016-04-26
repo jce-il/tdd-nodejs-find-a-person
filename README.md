@@ -1,6 +1,8 @@
 ## TDD Kata - FindAPerson
 A repository and starter for HW4 of the JCE [Software Engineering Course](https://github.com/jce-il/se-class/wiki/)
 
+[![Build Status](https://travis-ci.org/jce-il/tdd-nodejs-find-a-person.svg?branch=master)](https://travis-ci.org/jce-il/tdd-nodejs-find-a-person)
+
 ### Intro
 In this homework we are exercising [Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development).
 In this software development method code is written through the following cycle: Test (Red) -> Code (Green) -> Refactor. See lecture slides for more details and resources.
@@ -44,8 +46,8 @@ Since they state that there is a missing feature, we are going to add it! For a 
 ### Work Instructions
 1. To start, [**fork** the exercise repository][forking] (For later updates to this instructions: first add a [remote][config-remote] to the upstream repo and [sync][sync-remote] with a [pull][ref-pull]:  ```git pull upstream master```).
 1. [**Clone**][ref-clone] the repository to your workstation.
-1. Install needed global and local dependencies (see slides): ``` npm install```
-1. Check that you can run tests: ``` mocha tests --recursive --watch```
+1. Install needed dependencies (see slides): ``` npm install```
+1. Check that you can run tests: ```npm test```
 1. Modify/add files (in the repository directory) to complete your solution.
     * Each TDD phase needs to be git [**commit**ted][ref-commit] separately with a suitable message that tells the TDD stage and achivement, e.g. “RED: Test for finding a name” (at least 7 RGR steps).
     * You can also do it with pair programming, but you must switch roles between RED and GREEN, including commit author (see [here]( http://c2.com/cgi/wiki?PairProgrammingPingPongPattern), there is also a fun [Eclipse game]( http://www.happyprog.com/pairhero/) to guide it).
@@ -55,6 +57,7 @@ Since they state that there is a missing feature, we are going to add it! For a 
 1. [Create a **pull request**][pull-request] to the original repository to turn in the assignment, don't forget to:
    * Assign the TA for checking
    * Mention your pair in PR commits, if rellevant.
+1. Need help? ask at the course forum. Found a bug or have an improvement suggestion? please open an issue here or send a PR.
 
 (A pull-request screencast [demo](http://screencast-o-matic.com/watch/coe3IEeMDa) - done for another course)
 
