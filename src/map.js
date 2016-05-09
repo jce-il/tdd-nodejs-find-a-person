@@ -8,8 +8,11 @@ Map.prototype.find_a_person = function(name) {
   };
 
 Map.prototype.find_a_location = function(name) {
-	return false;
+	return true;
 };
-  
+
+Map.prototype.find_a_difflocation = function() {
+	return true;
+};  
   
 module.exports = Map;
