@@ -27,6 +27,4 @@ describe('Find a person', function() {
     expect(col).to.be.eql(true);
   });
 
-
-
 });
