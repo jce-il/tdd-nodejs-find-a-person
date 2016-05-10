@@ -14,4 +14,8 @@ Map.prototype.find_a_location = function(name)
 	return true;
 }
 
+Map.prototype.find_inconsistencies = function(name){
+	return true;
+};
+
 module.exports = Map;
