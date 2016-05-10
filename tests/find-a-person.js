@@ -50,3 +50,11 @@ describe('Find a teacher', function() {
     expect(found).to.be.eql(["I met Richard at Ben Gurion"]);
   });
 });
+
+describe('A multiply of 3', function() {
+  it('Given a some number, return the multiply to 3', function() {
+    var mul = new Map([6,9,15]);
+    var result = mul.multiply(9);
+    expect(result).to.be.eql(27);
+  });
+});
