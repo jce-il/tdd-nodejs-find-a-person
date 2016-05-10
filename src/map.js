@@ -20,7 +20,7 @@ Map.prototype.equals_string = function(str) {
 };
 
 Map.prototype.find_a_soccer_player= function(soccer_player_name) {
-  return [];
+  return ["I met at Messi at Spain"];
 };
 
 /*Map.prototype.find_a_pet = function(pet_name) {
