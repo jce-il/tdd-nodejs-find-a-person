@@ -1,4 +1,7 @@
+/*
+Author:Roi Cohen
 
+*/
 function Map(posts) {
   this._posts = posts;
 }
