@@ -1,4 +1,3 @@
-
 function Map(posts) {
   this._posts = posts;
 }
@@ -8,7 +7,7 @@ Map.prototype.find_by_loc = function(name) {
 		return true;
 	}
 	return false;
-  };
+};
 Map.prototype.find_a_person = function(name) {
 	var ret_val =[]; 
 	var i=0;
@@ -18,9 +17,7 @@ Map.prototype.find_a_person = function(name) {
 			ret_val.push(this._posts[i]);
 		}
 	}
-	
-	
-  return ret_val;
-  };
+	return ret_val;
+};
 
 module.exports = Map;
