@@ -15,5 +15,5 @@ describe('Find by location', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
     var posts = map.find_by_loc("Or A.")
     expect(posts).to.be.eql(true);
-  });
+		});
 });
