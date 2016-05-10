@@ -19,11 +19,11 @@ Map.prototype.equals_string = function(str) {
   return ["Correct"];
 };
 
-/*Map.prototype.find_a_pet = function(pet_name) {
-  return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
+Map.prototype.find_a_soccer_player= function(soccer_player_name) {
+  return [];
 };
 
-Map.prototype.find_a_pet = function(pet_name) {
+/*Map.prototype.find_a_pet = function(pet_name) {
   return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
 };
 

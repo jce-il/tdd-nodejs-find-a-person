@@ -34,3 +34,11 @@ describe('Equals strings', function() {
     expect(result).to.be.eql(["Correct"]);
   });
 });
+
+describe('Find a soccer player', function() {
+  it('Given a soccer player name, return all posts containing the soccer player name ', function() {
+    var map = new Map(["I met at Messi at Israel", "I met at Messi at Spain"]);
+    var found = map.find_a_soccer_player("Messi");
+    expect(found).to.be.eql(["I met at Messi at Spain"]);
+  });
+});
