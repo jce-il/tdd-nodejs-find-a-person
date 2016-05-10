@@ -46,7 +46,7 @@ describe('Find a soccer player', function() {
 describe('Find a teacher', function() {
   it('Given teacher name, return all posts containing the teacher name ', function() {
     var map = new Map(["I met at Richard at Denamark", "I met at Richard at Ben Gurion"]);
-    var found = map.find_a_soccer_player("Richard");
-    expect(found).to.be.eql(["I met atRichard at Ben Gurion "]);
+    var found = map.find_a_teacher("Richard");
+    expect(found).to.be.eql(["I met Richard at Ben Gurion"]);
   });
 });

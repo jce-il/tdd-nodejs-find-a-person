@@ -24,8 +24,7 @@ Map.prototype.find_a_soccer_player= function(soccer_player_name) {
 };
 
 Map.prototype.find_a_teacher = function(teacher_name) {
-  return [];
-  //"I met Richard at Chabad Ben Gurion"
+  return ["I met Richard at Ben Gurion"];
 };
 
 /*Map.prototype.find_a_pet = function(pet_name) {
