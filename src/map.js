@@ -8,7 +8,7 @@ Map.prototype.find_a_person = function(name) {
   };
 
 Map.prototype.multiply = function(number) {
-  return number;
+  return number*2;
 };
 
 
