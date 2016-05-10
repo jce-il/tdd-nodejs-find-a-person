@@ -21,6 +21,12 @@ describe('Find a person', function() {
     expect(inc).to.be.eql(true);
   });
 
+  it('Check if there are any Collaboration, e.g., the same name with different locations',function(){
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var col = map.find_any_collaboration("or A.")
+    expect(col).to.be.eql(true);
+  });
+
 
 
 });
