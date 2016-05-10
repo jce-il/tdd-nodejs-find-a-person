@@ -23,4 +23,10 @@ describe('Find a person', function() {
 		var inc = map.find_inconsistencies("or A.")
 		expect(inc).to.be.eql(true);
 	});
+	
+	it('Check if there are any collaboretion', function(){
+		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+		var col = map.find_any_collaboration();
+		expect(col).to.be.eql(true);
+	});
 });
