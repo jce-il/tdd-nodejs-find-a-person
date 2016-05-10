@@ -16,7 +16,7 @@ Map.prototype.find_a_pet = function(pet_name) {
 };
 
 Map.prototype.equals_string = function(str) {
-  return [];
+  return ["Correct"];
 };
 
 /*Map.prototype.find_a_pet = function(pet_name) {
