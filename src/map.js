@@ -27,8 +27,8 @@ Map.prototype.find_a_teacher = function(teacher_name) {
   return ["I met Richard at Ben Gurion"];
 };
 
-Map.prototype.multiply = function(number) {
-  return number;
+Map.prototype.multiply_second = function(number) {
+  return number*3;
 };
 
 

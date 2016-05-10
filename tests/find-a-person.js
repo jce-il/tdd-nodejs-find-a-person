@@ -53,8 +53,8 @@ describe('Find a teacher', function() {
 
 describe('A multiply of 3', function() {
   it('Given a some number, return the multiply to 3', function() {
-    var mul = new Map([6,9,15]);
-    var result = mul.multiply(9);
+    var mul = new Map([6,9,27]);
+    var result = mul.multiply_second(9);
     expect(result).to.be.eql(27);
   });
 });
