@@ -11,11 +11,11 @@ describe('Find a person', function() {
 });
 
 
-/*describe('Multiply numbers', function() {
+describe('A multiply of 2', function() {
   it('Given a some number, return the multiply to 2', function() {
     var mul = new Map([6,7,8]);
     var result = mul.multiply(4);
     expect(result).to.be.eql(8);
   });
-});*/
+});
 
