@@ -23,11 +23,12 @@ Map.prototype.find_a_soccer_player= function(soccer_player_name) {
   return ["I met at Messi at Spain"];
 };
 
-/*Map.prototype.find_a_pet = function(pet_name) {
-  return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
+Map.prototype.find_a_teacher = function(teacher_name) {
+  return [];
+  //"I met Richard at Chabad Ben Gurion"
 };
 
-Map.prototype.find_a_pet = function(pet_name) {
+/*Map.prototype.find_a_pet = function(pet_name) {
   return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
 };*/
 
