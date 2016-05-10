@@ -15,6 +15,22 @@ Map.prototype.find_a_pet = function(pet_name) {
   return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
 };
 
+Map.prototype.equals_string = function(str) {
+  return [];
+};
+
+/*Map.prototype.find_a_pet = function(pet_name) {
+  return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
+};
+
+Map.prototype.find_a_pet = function(pet_name) {
+  return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
+};
+
+Map.prototype.find_a_pet = function(pet_name) {
+  return ["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"];
+};*/
+
 
 module.exports = Map;
 

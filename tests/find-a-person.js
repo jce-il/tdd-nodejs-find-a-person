@@ -26,3 +26,11 @@ describe('Find a pet', function() {
     expect(posts).to.be.eql(["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"]);
   });
 });
+
+describe('Equals strings', function() {
+  it('Given a string, return if the string is equals', function() {
+    var strings = new Map(["Correct", "Incorrect"]);
+    var result = strings.equals_string("The academy");
+    expect(result).to.be.eql(["Correct"]);
+  });
+});
