@@ -11,4 +11,6 @@ Map.prototype.find_location = function(name){
   return true;
 };
 
+
+
 module.exports = Map;
