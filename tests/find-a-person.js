@@ -21,8 +21,8 @@ describe('A multiply of 2', function() {
 
 describe('Find a pet', function() {
   it('Given a pet name, return all posts (of a map) containing her name', function() {
-    var map = new Map(["I met Tony at Chabad house Israel"]);
+    var map = new Map(["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"]);
     var posts = map.find_a_pet("Tony");
-    expect(posts).to.be.eql("Messi");
+    expect(posts).to.be.eql(["I met Tony at Chabad house Israel", "I met Tony at Las Vegas"]);
   });
 });
