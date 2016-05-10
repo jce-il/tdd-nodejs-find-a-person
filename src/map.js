@@ -11,6 +11,10 @@ Map.prototype.multiply = function(number) {
   return number*2;
 };
 
+Map.prototype.find_a_pet = function(pet_name) {
+  return [];
+};
+
 
 module.exports = Map;
 
