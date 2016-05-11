@@ -18,3 +18,14 @@ describe('check location', function() {
     expect(answer).to.be.eql("True");
   });
 });
+
+describe('check map inconsistencies', function() {
+  it('Check if there are map inconsistencies, e.g., the same name with different locations.', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var answer = map.check_for_map_inconsistencies("Or A.");
+
+    //comment
+    expect(answer).to.be.eql("True");
+  });
+});
+
