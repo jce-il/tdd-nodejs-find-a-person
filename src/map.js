@@ -8,7 +8,7 @@ Map.prototype.find_a_person = function(name) {
 
 	var res = [];
 	var i;
-	for(i = 0; i < 3; i++)
+	for(i = 0; i < this._posts.length; i++)
 	{
 		if(this._posts[i].indexOf(name) > -1)
 		{
