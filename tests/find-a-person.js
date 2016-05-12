@@ -29,3 +29,14 @@ describe('check map inconsistencies', function() {
   });
 });
 
+describe('check map inconsistencies of a larger map', function() {
+  it('Check if there are map inconsistencies, e.g., the same name with different locations.', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "We found David at Location2", "I met David at Location", "David died at Location"]);
+    var answer = map.check_for_map_inconsistencies("David");
+
+    //comment
+    expect(answer).to.be.eql("True");
+  });
+});
+
+

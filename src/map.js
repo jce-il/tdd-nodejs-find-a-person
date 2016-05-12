@@ -66,21 +66,21 @@ Map.prototype.check_for_map_inconsistencies = function(name) {
 				
 		}
 	}
-		//check for multiple locations
-		if(numOfPlaces > 1)
+	//check for multiple locations
+	if(numOfPlaces > 1)
+	{
+		for (var i = 0 ; i < numOfPlaces ; i++)
 		{
-			for (var i = 0 ; i < numOfPlaces ; i++)
+			for (var j = 0 ; j < numOfPlaces ; j++)
 			{
-				for (var j = 0 ; j < numOfPlaces ; j++)
+				if(places[i] != places[j])
 				{
-					if(places[i] != places[j])
-					{
-						return "True";
-					}
+					return "True";
 				}
 			}
 		}
+	}
 
-		return "False";
+	return "False";
 }
 module.exports = Map;
