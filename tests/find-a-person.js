@@ -47,7 +47,7 @@ describe('A addition of 2',function(){
 
 
 
-//Test num 4 : Determine if a number is a power of 2
+//Test num 5 : Determine if a number is a power of 2
 
 describe('Determine if a number is a power of 2',function(){
     it('Given a number,check if he is power of 2',function(){
