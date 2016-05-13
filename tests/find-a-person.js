@@ -34,4 +34,13 @@ describe('Find a car', function() {
 });
 
 
+//Test num 4 : addition of 2
 
+describe('A addition of 2',function(){
+    it('Given a 2 numbers,return the addition of the 2 numbers',function(){
+       var additon=new Map([10,11,12]);
+       var res=additon.add(5,6);
+       expect(res).to.be.eql(11);
+       
+       });        
+});
