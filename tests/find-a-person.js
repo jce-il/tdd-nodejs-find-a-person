@@ -57,3 +57,16 @@ describe('Determine if a number is a power of 2',function(){
        
        });        
 });
+
+
+
+//Test num 6 : Division of 2 numbers
+
+describe('A division of 2',function(){
+    it('Given a 2 numbers,return the division of the 2 numbers',function(){
+       var map=new Map([1,2,3]);
+       var res=map.div(9,3);
+       expect(res).to.be.eql(3);
+       
+       });        
+});
