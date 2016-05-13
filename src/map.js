@@ -42,7 +42,7 @@ Map.prototype.checkPowerOf2=function(num)
 
 Map.prototype.div=function(num1,num2)
 {
-    return 0;
+    return num1/num2;
 };
 
 
