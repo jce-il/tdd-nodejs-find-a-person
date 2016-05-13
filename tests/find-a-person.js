@@ -25,11 +25,13 @@ describe('A multiply of 2',function(){
 
 //Test num 3 : find a car
 
-describe('Find a person', function() {
+describe('Find a car', function() {
   it('Given a car name, return all posts (of a map) containing her name (in any of a post fields)', function() {
     var map = new Map(["I buy a new Honda car", "Honda is the best family car that exists", "Random post"]);
     var posts = map.find_a_car("Honda")
     expect(posts).to.be.eql(["I buy a new Honda car", "Honda is the best family car that exists"]);
   });
 });
+
+
 

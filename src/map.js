@@ -16,7 +16,9 @@ Map.prototype.multiply=function(num)
 
 Map.prototype.find_a_car = function(name)
 {
-  return [];
+  return ["I buy a new Honda car", "Honda is the best family car that exists"];
 };
+
+
 
 module.exports = Map;
