@@ -25,4 +25,13 @@ Map.prototype.add=function(num1,num2)
     return num1+num2;
 };
 
+
+Map.prototype.checkPowerOf2=function(num)
+{
+    return false;
+};
+
+
 module.exports = Map;
+
+

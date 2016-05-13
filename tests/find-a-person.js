@@ -38,9 +38,22 @@ describe('Find a car', function() {
 
 describe('A addition of 2',function(){
     it('Given a 2 numbers,return the addition of the 2 numbers',function(){
-       var additon=new Map([10,11,12]);
-       var res=additon.add(5,6);
+       var map=new Map([10,11,12]);
+       var res=map.add(5,6);
        expect(res).to.be.eql(11);
+       
+       });        
+});
+
+
+
+//Test num 4 : Determine if a number is a power of 2
+
+describe('Determine if a number is a power of 2',function(){
+    it('Given a number,check if he is power of 2',function(){
+       var map=new Map([true,false]);
+       var res=map.checkPowerOf2(8);
+       expect(res).to.be.eql(true);
        
        });        
 });
