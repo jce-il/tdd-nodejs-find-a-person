@@ -17,3 +17,11 @@ describe('Find a location', function() {
     expect(loc).to.be.eql(true);
   });
 });
+
+describe('Find map inconsistencies', function() {
+  it('Given a name, check if the same name appers in different locations', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var loc = map.find_a_location("Or A.")
+    expect(loc).to.be.eql(false);
+  });
+});
