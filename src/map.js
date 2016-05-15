@@ -8,9 +8,9 @@ Map.prototype.find_a_person = function(name) {
   };
 Map.prototype.find_by_location = function(name) {
  if(this.find_a_person(name).length>0)
-return false;
+return true;
 	else 
- return true;
+ return false;
 	
   };
 module.exports = Map;
