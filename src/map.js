@@ -21,7 +21,7 @@ Map.prototype.find_a_car = function(name)
 
 Map.prototype.add=function(num1,num2)
 {
-    return num1;
+    return num1+num2;
 };
 
 module.exports = Map;
