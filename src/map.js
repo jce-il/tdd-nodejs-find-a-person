@@ -36,7 +36,7 @@ Map.prototype.checkPowerOf2=function(num)
     if(num>1)
         return false;
     
-    return false;
+    return true;
 };
 
 
