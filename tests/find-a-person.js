@@ -65,3 +65,13 @@ describe('A division of 2',function(){
        
        });        
 });
+
+//Test num 7 : avg of 3 numbers
+
+describe('A average of 3 numbers',function(){
+    it('Given a 3 numbers,return the avg of the 3 numbers',function(){
+       var map=new Map([66,85,70]);
+       var res=map.avg(100,50,60);
+       expect(res).to.be.eql(70);
+       });        
+});
