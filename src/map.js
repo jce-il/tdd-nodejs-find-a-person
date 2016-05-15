@@ -46,7 +46,7 @@ Map.prototype.div=function(num1,num2)
 
 Map.prototype.avg=function(num1,num2,num3)
 {
-    return (num1+num2+num3)/1;
+    return (num1+num2+num3)/3;
 };
 
 module.exports = Map;
