@@ -13,4 +13,12 @@ return true;
  return false;
 	
   };
+Map.prototype.check_inconsistencies_map = function(name) {
+	if(this.find_a_person(name).length>1)
+return false;
+	else 
+ return true;
+	
+	
+}
 module.exports = Map;
