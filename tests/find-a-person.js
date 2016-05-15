@@ -1,3 +1,9 @@
+/**
+Moria Rabayoff
+user github:moria0525
+HW4
+**/
+
 var chai = require('chai');
 var expect = chai.expect; // we are using the "expect" style of Chai
 var Map = require('./../src/map');

@@ -1,3 +1,8 @@
+/**
+Moria Rabayoff
+user github:moria0525
+HW4
+**/
 
 function Map(posts) {
   this._posts = posts;
