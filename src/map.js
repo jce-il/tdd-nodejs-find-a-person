@@ -9,7 +9,7 @@ Map.prototype.find_a_person = function(name) {
 
 Map.prototype.multiply=function(num)
 {
-    return 1;
+    return num*2;
 };
 
 module.exports = Map;
