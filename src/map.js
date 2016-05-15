@@ -15,9 +15,9 @@ return true;
   };
 Map.prototype.check_inconsistencies_map = function(name) {
 	if(this.find_a_person(name).length>1)
-return false;
+return true;
 	else 
- return true;
+ return false;
 	
 	
 }
