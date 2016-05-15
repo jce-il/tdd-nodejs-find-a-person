@@ -17,7 +17,7 @@ Map.prototype.find_a_location = function(name)
 
 Map.prototype.find_map_inconsistencies = function(name) 
 {
-    if(this.find_a_person(name).length < 1)
+    if(this.find_a_person(name).length > 1)
       return true;
     return false;
 };
