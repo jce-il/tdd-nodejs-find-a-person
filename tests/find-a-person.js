@@ -30,3 +30,14 @@ describe('Find a car', function() {
     expect(posts).to.be.eql(["I buy a new Honda car", "Honda is the best family car that exists"]);
   });
 });
+
+//Test num 4 : addition of 2
+
+describe('A addition of 2',function(){
+    it('Given a 2 numbers,return the addition of the 2 numbers',function(){
+       var map=new Map([10,11,12]);
+       var res=map.add(5,6);
+       expect(res).to.be.eql(11);
+       
+       });        
+});

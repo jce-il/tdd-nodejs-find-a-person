@@ -18,4 +18,10 @@ Map.prototype.find_a_car = function(name)
   return ["I buy a new Honda car", "Honda is the best family car that exists"];
 };
 
+
+Map.prototype.add=function(num1,num2)
+{
+    return num1;
+};
+
 module.exports = Map;
