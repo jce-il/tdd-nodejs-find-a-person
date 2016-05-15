@@ -39,5 +39,9 @@ Map.prototype.checkPowerOf2=function(num)
     return true;
 };
 
+Map.prototype.div=function(num1,num2)
+{
+    return num1/0;
+};
 
 module.exports = Map;
