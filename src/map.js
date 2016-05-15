@@ -24,4 +24,20 @@ Map.prototype.add=function(num1,num2)
     return num1+num2;
 };
 
+
+Map.prototype.checkPowerOf2=function(num)
+{   
+    if(num==0)
+        return false;
+    
+    while(num%2==0)
+        num=num/2;
+    
+    if(num>1)
+        return false;
+    
+    return false;
+};
+
+
 module.exports = Map;

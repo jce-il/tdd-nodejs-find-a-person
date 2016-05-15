@@ -41,3 +41,15 @@ describe('A addition of 2',function(){
        
        });        
 });
+
+
+//Test num 5 : Determine if a number is a power of 2
+
+describe('Determine if a number is a power of 2',function(){
+    it('Given a number,check if he is power of 2',function(){
+       var map=new Map([true,false]);
+       var res=map.checkPowerOf2(8);
+       expect(res).to.be.eql(true);
+       
+       });        
+});
