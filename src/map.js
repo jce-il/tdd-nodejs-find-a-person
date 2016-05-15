@@ -12,4 +12,10 @@ Map.prototype.multiply=function(num)
     return num*2;
 };
 
+
+Map.prototype.find_a_car = function(name)
+{
+  return [];
+};
+
 module.exports = Map;
