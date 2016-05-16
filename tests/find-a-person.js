@@ -18,4 +18,10 @@ describe('Find a person', function() {
     var findMap = map.find_map("Or A.")
     expect(findMap).to.be.eql(true);
   });
+  
+    it('Find a post', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var findPost = map.find_post("Or A.")
+    expect(findPost).to.be.eql(true);
+  });
 });
