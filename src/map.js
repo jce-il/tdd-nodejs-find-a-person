@@ -11,4 +11,8 @@ Map.prototype.find_a_person = function(name) {
 	return arr;
 };
 
+Map.prototype.find_a_person_with_location = function(name) {
+	return false;
+};
+
 module.exports = Map;
