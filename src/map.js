@@ -21,7 +21,7 @@ Map.prototype.find_a_person = function(name) {
   
 Map.prototype.check_for_location = function(name) {
 
-	return false;
+	return true;
 };
 
 module.exports = Map;
