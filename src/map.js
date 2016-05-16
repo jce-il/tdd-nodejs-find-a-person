@@ -19,7 +19,7 @@ Map.prototype.check_inconsistencies_map = function(name) {
 }
 
 Map.prototype.check_if_person_visit_location = function(name, location) {
-	return false;
+	return true;
 }
 
 module.exports = Map;
