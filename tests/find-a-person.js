@@ -9,9 +9,14 @@ describe('Find a person', function() {
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
     
-     it('mult 2 nubers)', function() {
+     it('power number)', function() {
     var map = new Map([2,3,4,8,16]);
     var posts = map.powNum(8)
     expect(posts).to.be.eql(64);
+  });
+     it('squaere number)', function() {
+    var map = new Map([2,3,4,8,16]);
+    var posts = map.sqwNum(4)
+    expect(posts).to.be.eql(2);
   });
 });

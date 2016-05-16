@@ -12,4 +12,9 @@ Map.prototype.powNum = function(num) {
   return num*num;
   };
 
+Map.prototype.sqwNum = function(num) {
+  return Math.sqrt(num);
+  };
+
+
 module.exports = Map;
