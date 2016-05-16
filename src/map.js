@@ -18,4 +18,8 @@ Map.prototype.check_inconsistencies_map = function(name) {
 	return true;
 }
 
+Map.prototype.check_if_person_visit_location = function(name, location) {
+	return false;
+}
+
 module.exports = Map;
