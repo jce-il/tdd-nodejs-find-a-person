@@ -19,4 +19,9 @@ Map.prototype.find_a_person_with_location = function(name) {
 	return false;
 };
 
+Map.prototype.check_inconsistencies = function() {
+	return false;
+};
+
+
 module.exports = Map;
