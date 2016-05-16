@@ -13,4 +13,10 @@ describe('Find a person', function() { //green
     var posts = map.powNum(2)
     expect(posts).to.be.eql(4);
   });
+    
+      it('given a number decrease 2 from it ', function() {
+    var map = new Map([2,3,4,7,8,16]);
+    var posts = map.DecNum(4)
+    expect(posts).to.be.eql(2);
+  });
 });
