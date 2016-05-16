@@ -21,7 +21,21 @@ Map.prototype.find_a_person = function(name) {
   
 Map.prototype.check_for_location = function(name) {
 
-	return true;
+	var posts = this.find_a_person(name);
+	var index, i;
+
+	for(i = 0; i < posts.length; i++)
+	{
+		index = posts[i].indexOf("at");
+		if(index > -1)
+		{
+			if(posts[i][index + 3] === posts[i][index + 3].toUpperCase())
+			{
+				return true;
+			}
+		}
+	}
+	return false;
 };
 
 module.exports = Map;
