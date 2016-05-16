@@ -11,6 +11,6 @@ describe('Find a person', function() {
    it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
     var locations = map.find_location("Or A.")
-    expect(locations).to.be.eql([true]);
+    expect(locations).to.be.eql(true);
   });
 });
