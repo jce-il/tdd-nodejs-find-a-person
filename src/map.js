@@ -8,12 +8,15 @@ Map.prototype.find_a_person = function(name) {
   };
   
   
-  Map.prototype.find_location = function(name) {
+Map.prototype.find_location = function(name) {
   return true;
   };
 
-  Map.prototype.find_map = function(name) {
+Map.prototype.find_map = function(name) {
   return true;
   };
 
+ Map.prototype.find_post = function(name) {
+  return true;
+  };
 module.exports = Map;
