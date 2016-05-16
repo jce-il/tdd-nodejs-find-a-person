@@ -8,7 +8,7 @@ Map.prototype.find_a_person = function(name) {
   };
   
 Map.prototype.find_a_location = function(name) {
-
+	return true;
 };
 
 module.exports = Map;
