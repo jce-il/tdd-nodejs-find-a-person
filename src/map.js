@@ -12,5 +12,8 @@ Map.prototype.find_a_person = function(name) {
   return true;
   };
 
+  Map.prototype.find_map = function(name) {
+  return true;
+  };
 
 module.exports = Map;
