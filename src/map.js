@@ -38,4 +38,10 @@ Map.prototype.check_for_location = function(name) {
 	return false;
 };
 
+
+Map.prototype.check_for_map_inconsistencies = function(name) {
+
+	return false;
+}
+
 module.exports = Map;
