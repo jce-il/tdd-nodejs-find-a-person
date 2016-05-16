@@ -13,4 +13,11 @@ describe('Find a person', function() {
  	var loc = map.find_location("or A.")
  	expect(loc).to.be.eql(true);
  	});
+    
+    it('Check if there are map inconsistencies, e.g., the same name with different locations',function(){
+ 		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+ 		var inc = map.find_inconsistencies("or A.")
+ 		expect(inc).to.be.eql(true);
+ 	});
+        
 });
