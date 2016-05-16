@@ -47,10 +47,11 @@ Map.prototype.check_map_inconsistencies = function() {
 		});
 
 		if (array.length > 1) {
-			var loc = array[0];
-			for (var i = 1; i < array.length; i++) {
-				if (loc != array[i])
-					res = true;
+			for (var i = 0; i < array.length; i++) {
+				for (var j = 0; j < array.length; j++) {
+					if (i != j && array[i] != array[j])
+						res = true;
+				}
 			}
 		}	
 	});
