@@ -23,7 +23,7 @@ describe('Find a person', function() {
   it('Check Collaborate', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
     var checkCollaborate = map.Check_Collaborate("Or A.")
-    expect(mapInconsistencies).to.be.eql(true);
+    expect(checkCollaborate).to.be.eql(true);
   });
   
 });
