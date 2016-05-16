@@ -8,4 +8,10 @@ describe('Find a person', function() {
     var posts = map.find_a_person("Or A.")
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
+    
+     it('mult 2 nubers)', function() {
+    var map = new Map([2,3,4,8,16]);
+    var posts = map.powNum(8)
+    expect(posts).to.be.eql(64);
+  });
 });
