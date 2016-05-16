@@ -13,4 +13,9 @@ Map.prototype.find_by_location = function(name) {
 	else 
 		return false;	
 };
+
+Map.prototype.check_inconsistencies_map = function(name) {
+	return false;
+}
+
 module.exports = Map;
