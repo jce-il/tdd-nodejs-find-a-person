@@ -12,7 +12,7 @@ Map.prototype.find_a_person = function(name) {
 Map.prototype.powNum = function(num) {
    
     
-        return num;
+        return num*num;
         
   };
 
