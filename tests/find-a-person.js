@@ -17,3 +17,11 @@ describe('Find a person not exists', function() {
     expect(posts).to.be.empty;
   });
 });
+
+describe('Find a person in location', function() {
+  it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var res = map.check_if_person_in_location("Or A.")
+    expect(res).to.be.true;
+  });
+});
