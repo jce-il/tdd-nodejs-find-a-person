@@ -16,6 +16,9 @@ Map.prototype.find_inconsistencies = function(name){
  	return true;
  };
 
+Map.prototype.find_any_collaboration = function(name){
+ 	return true;
+ };
 
 
 module.exports = Map;
