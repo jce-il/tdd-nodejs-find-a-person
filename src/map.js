@@ -13,4 +13,11 @@ Map.prototype.find_by_location = function(name) {
   return false;
  	
    };
+Map.prototype.check_inconsistencies_map = function(name) {
+	if(this.find_a_person(name).length>1)
+        return false;
+	else 
+    return true;
+ }
+
 module.exports = Map;
