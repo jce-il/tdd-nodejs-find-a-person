@@ -11,6 +11,10 @@ Map.prototype.find_a_person = function(name) {
   {
 	  return true;
   }
-  
+
+  Map.prototype.CheckMapInconsistencies = function(name)
+  {
+	  return true;
+  }  
   
 module.exports = Map;
