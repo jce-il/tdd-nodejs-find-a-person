@@ -1,4 +1,7 @@
-
+/*
+	Barak Turgeman
+	Ex4
+*/
 function Map(posts) {
   this._posts = posts;
 }
