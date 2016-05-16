@@ -41,7 +41,27 @@ Map.prototype.check_for_location = function(name) {
 
 Map.prototype.check_for_map_inconsistencies = function(name) {
 
+	var posts = this.find_a_person(name);
+	var index, i, counter = 0;
+
+	for(i = 0; i < posts.length; i++)
+	{
+		index = posts[i].indexOf("at");
+		if(index > -1)
+		{
+			if(posts[i][index + 3] === posts[i][index + 3].toUpperCase())
+			{
+				counter++;
+			}
+		}
+	}
+	if(counter > 1)
+		return true;
+		
 	return false;
 }
 
 module.exports = Map;
+
+
+
