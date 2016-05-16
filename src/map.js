@@ -1,4 +1,6 @@
-
+/*
+Dor-H ex4
+*/
 function Map(posts) {
   this._posts = posts;
 }
