@@ -42,10 +42,27 @@ describe('Find a person in location return false', function() {
   });
 });
 
-describe('Check map inconsistencies', function() {
+describe('Check map inconsistencies return true', function() {
   it('Check if there are map inconsistencies, e.g., the same name with different locations', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
     var res = map.check_map_inconsistencies()
     expect(res).to.be.true;
   });
 });
+
+describe('Check map inconsistencies return true 2', function() {
+  it('Check if there are map inconsistencies, e.g., the same name with different locations', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Holand", "Random post"]);
+    var res = map.check_map_inconsistencies()
+    expect(res).to.be.true;
+  });
+});
+
+describe('Check map inconsistencies return false', function() {
+  it('Check if there are map inconsistencies, e.g., the same name with different locations', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or B. R.I.P at Langtang valley", "Random post"]);
+    var res = map.check_map_inconsistencies()
+    expect(res).to.be.false;
+  });
+});
+
