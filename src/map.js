@@ -17,7 +17,7 @@ Map.prototype.find_inconsistencies = function(name){
  };
 
 Map.prototype.find_any_collaboration = function(name){
- 	return true;
+ 	return false;
  };
 
 
