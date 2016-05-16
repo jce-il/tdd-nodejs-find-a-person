@@ -13,8 +13,8 @@ Map.prototype.find_by_location = function(name) {
 };
 Map.prototype.check_inconsistencies_map  = function(name) {
 	if(this.find_a_person(name).length>0)
-		return false;
-	else return true;
+		return true;
+	else return false;
 };
 
 module.exports = Map;
