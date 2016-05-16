@@ -43,6 +43,14 @@ describe('Find a person without location', function() {
   });
 });
 
+describe('Find a person with general location', function() {
+  it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+    var map = new Map(["Random post", "Or in Jerusalem"]);
+    var posts = map.find_a_person_with_location("Or")
+    expect(posts).to.be.eql(true);
+  });
+});
+
 describe('Check map inconsistencies: a person with different locations', function() {
   it('Check if there are map inconsistencies, e.g., the same name with different locations', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post", "Or in Jerusalem"]);
@@ -50,3 +58,4 @@ describe('Check map inconsistencies: a person with different locations', functio
     expect(posts).to.be.eql(true);
   });
 });
+
