@@ -19,4 +19,11 @@ describe('Find a person', function() {
     var mapInconsistencies = map.CheckMapInconsistencies("Or A.")
     expect(mapInconsistencies).to.be.eql(true);
   });
+  
+  it('Check Collaborate', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var checkCollaborate = map.Check_Collaborate("Or A.")
+    expect(mapInconsistencies).to.be.eql(true);
+  });
+  
 });
