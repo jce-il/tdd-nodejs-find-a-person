@@ -15,6 +15,7 @@ Map.prototype.find_a_person = function(name) {
 Map.prototype.find_a_person_with_location = function(name) {
 	var filtered_posts = this.find_a_person(name);
 	for (var i=0; i<filtered_posts.length; i++)
+		//"at" or "in" keywords indicate location
 		if (filtered_posts[i].indexOf(" at ") >= 0 || filtered_posts[i].indexOf(" in ") >= 0)
 			return true;
 
