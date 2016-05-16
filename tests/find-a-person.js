@@ -41,3 +41,11 @@ describe('Find a person in location return false', function() {
     expect(res).to.be.false;
   });
 });
+
+describe('Check map inconsistencies', function() {
+  it('Check if there are map inconsistencies, e.g., the same name with different locations', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var res = map.check_map_inconsistencies()
+    expect(res).to.be.true;
+  });
+});

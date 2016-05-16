@@ -28,4 +28,10 @@ Map.prototype.find_a_person = function(name) {
 	return res;
   };
 
+  
+Map.prototype.check_map_inconsistencies = function() {
+	
+	return null;
+  };
+  
 module.exports = Map;
