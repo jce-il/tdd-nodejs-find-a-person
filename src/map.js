@@ -20,6 +20,6 @@ Map.prototype.DecNum = function(num) {
   };
 Map.prototype.findNUM = function(num) {
    
-        return num+10;  
+        return num+3;  
   };
 module.exports = Map;

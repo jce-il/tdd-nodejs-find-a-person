@@ -19,12 +19,12 @@ describe('Find a person', function() { //green
     var posts = map.DecNum(4)
     expect(posts).to.be.eql(2);
           
-  
-  /*
+  });
+ 
      it('given a number find the number +10 ', function() {
     var map = new Map([10,20,30,40]);
     var posts = map.findNUM(10)
     expect(posts).to.be.eql(20);
-    */     
+        
   });
 });
