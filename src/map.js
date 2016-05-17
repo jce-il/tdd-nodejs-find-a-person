@@ -24,7 +24,7 @@ Map.prototype.sum = function(num1, num2)
 
 Map.prototype.numPlus50 = function(num) 
 {
-    return 50;
+    return num + 50;
 };
 
 
