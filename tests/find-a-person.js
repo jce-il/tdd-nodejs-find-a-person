@@ -11,6 +11,7 @@ describe('Find a person', function()
         expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
     });
     
+    
      it('Given a number, return the power of it', function() 
     {
         var map = new Map([2,16,4,7]);
@@ -24,6 +25,14 @@ describe('Find a person', function()
         var map = new Map([1,2,3,4,5,6,7,8,9]);
         var posts = map.sum(2,2)
         expect(posts).to.be.eql(4);
+    });
+    
+    
+    it('Given a number, return the number Plus 50', function() 
+    {
+        var map = new Map([51,52,53,54,55,56,57,58,59]);
+        var posts = map.sum(3)
+        expect(posts).to.be.eql(53);
     });
 
 });

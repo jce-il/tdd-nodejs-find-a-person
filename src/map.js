@@ -22,4 +22,10 @@ Map.prototype.sum = function(num1, num2)
 };
 
 
+Map.prototype.numPlus50 = function(num) 
+{
+    return 50;
+};
+
+
 module.exports = Map;
