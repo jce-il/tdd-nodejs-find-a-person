@@ -14,7 +14,7 @@ describe('Find a person', function()
      it('Given a number, return the power of it', function() 
     {
         var map = new Map([2,16,4,7]);
-        var posts = map.find_a_person(2)
+        var posts = map.powNum(2)
         expect(posts).to.be.eql(4);
     });
 
