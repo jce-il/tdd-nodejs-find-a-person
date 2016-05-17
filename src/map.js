@@ -24,6 +24,6 @@ Map.prototype.findNUM = function(num) {
   };
 Map.prototype.findNeg = function(num) {
    
-        return num;  
+        return num*-1;  
   };
 module.exports = Map;
