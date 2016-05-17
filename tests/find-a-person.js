@@ -22,7 +22,7 @@ describe('Find a person', function()
     it('Given 2 numbers, return the sum of them', function() 
     {
         var map = new Map([1,2,3,4,5,6,7,8,9]);
-        var posts = map.sum(2)
+        var posts = map.sum(2,2)
         expect(posts).to.be.eql(4);
     });
 
