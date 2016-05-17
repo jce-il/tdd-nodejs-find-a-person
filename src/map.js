@@ -25,7 +25,7 @@ Map.prototype.addnum = function(num1,num2) {
   };
 
 Map.prototype.multnum = function(num1,num2) {
-  return num1+num2;
+  return num1*num2;
   };
 
 module.exports = Map;
