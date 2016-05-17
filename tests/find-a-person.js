@@ -19,4 +19,9 @@ describe('Find a person', function() {
     var posts = map.sqwNum(4)
     expect(posts).to.be.eql(2);
   });
+    it('compare strings)', function() {
+    var map = new Map([0,-1]);
+    var posts = map.compstr('hello','hello1')
+    expect(posts).to.be.eql(0);
+  });
 });
