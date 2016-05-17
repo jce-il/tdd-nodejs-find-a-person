@@ -28,4 +28,10 @@ Map.prototype.numPlus50 = function(num)
 };
 
 
+Map.prototype.minus = function(num1, num2) 
+{
+    return num1;
+};
+
+
 module.exports = Map;

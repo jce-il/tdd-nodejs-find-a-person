@@ -31,8 +31,16 @@ describe('Find a person', function()
     it('Given a number, return the number Plus 50', function() 
     {
         var map = new Map([51,52,53,54,55,56,57,58,59]);
-        var posts = map.sum(3)
+        var posts = map.numPlus50(3)
         expect(posts).to.be.eql(53);
+    });
+    
+    
+    it('Given 2 numbers, return the sub of them', function() 
+    {
+        var map = new Map([0,1,2,3,4,5,6,7,8,9]);
+        var posts = map.minus(3,2)
+        expect(posts).to.be.eql(1);
     });
 
 });
