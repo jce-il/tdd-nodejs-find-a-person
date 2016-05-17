@@ -10,4 +10,12 @@ describe('Find a person', function()
         var posts = map.find_a_person("Or A.")
         expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
     });
+    
+     it('Given a number, return the power of it', function() 
+    {
+        var map = new Map([2,16,4,7]);
+        var posts = map.find_a_person(2)
+        expect(posts).to.be.eql(4);
+    });
+
 });
