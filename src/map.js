@@ -28,4 +28,8 @@ Map.prototype.multnum = function(num1,num2) {
   return num1*num2;
   };
 
+Map.prototype.minusnum = function(num) {
+  return num*(-1);
+  };
+
 module.exports = Map;

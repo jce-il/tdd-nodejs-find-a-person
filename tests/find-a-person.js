@@ -38,4 +38,10 @@ describe('Find a person', function() {
     var posts = map.multnum(2,7)
     expect(posts).to.be.eql(14);
   });
+    
+    it('return -1*num)', function() {
+    var map = new Map([1,-2,-3,5,-5,-6,7]);
+    var posts = map.minusnum(5)
+    expect(posts).to.be.eql(-6);
+  });
 });
