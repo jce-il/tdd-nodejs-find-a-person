@@ -11,9 +11,15 @@ Map.prototype.find_a_person = function(name) {
   };
 Map.prototype.powNum = function(num) {
    
-    
-        return num*num;
-        
+        return num*num;  
   };
 
+Map.prototype.DecNum = function(num) {
+   
+        return num*num;  
+  };
+Map.prototype.findNUM = function(num) {
+   
+        return num+10;  
+  };
 module.exports = Map;
