@@ -16,7 +16,7 @@ Map.prototype.powNum = function(num) {
 
 Map.prototype.DecNum = function(num) {
    
-        return num*num;  
+        return num-2;  
   };
 Map.prototype.findNUM = function(num) {
    
