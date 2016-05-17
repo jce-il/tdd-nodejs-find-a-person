@@ -42,6 +42,6 @@ describe('Find a person', function() {
     it('return -1*num)', function() {
     var map = new Map([1,-2,-3,5,-5,-6,7]);
     var posts = map.minusnum(5)
-    expect(posts).to.be.eql(-6);
+    expect(posts).to.be.eql(-5);
   });
 });
