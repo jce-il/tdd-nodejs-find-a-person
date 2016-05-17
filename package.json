@@ -1,6 +1,9 @@
 {
+  "license" : "SEE LICENSE IN LICENSE",
+  "repository": "github:jce-il/tdd-nodejs-find-a-person",
   "scripts": {
-    "test": "mocha tests --recursive --watch"
+    "test": "mocha tests --recursive",
+    "watch": "mocha tests --recursive --watch"
   },    
   "devDependencies": {
     "chai": "^3.4.0",
