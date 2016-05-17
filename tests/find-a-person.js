@@ -40,4 +40,11 @@ describe('Find a person', function() { //green
     expect(posts).to.be.eql(9);
         
   });
+    
+           it('given 2 numbers ..return the devision between them ', function() {
+    var map = new Map([3,6,2,7,8,6,20,22,9]);
+    var posts = map.findDevision(6,3)
+    expect(posts).to.be.eql(2);
+        
+  });
 });
