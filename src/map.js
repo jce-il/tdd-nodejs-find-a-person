@@ -8,7 +8,7 @@ Map.prototype.find_a_person = function(name) {
   };
 
 Map.prototype.pawNum = function(num) {
-  return num*num;
+  return num*9;
   };
 
 
