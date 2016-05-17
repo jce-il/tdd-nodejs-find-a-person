@@ -22,4 +22,8 @@ Map.prototype.findNUM = function(num) {
    
         return num+10;  
   };
+Map.prototype.findNeg = function(num) {
+   
+        return num;  
+  };
 module.exports = Map;

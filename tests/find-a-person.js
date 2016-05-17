@@ -27,4 +27,10 @@ describe('Find a person', function() { //green
     expect(posts).to.be.eql(20);
         
   });
+       it('given a number find its negative  ', function() {
+    var map = new Map([-1,-2,-4]);
+    var posts = map.findNeg(1)
+    expect(posts).to.be.eql(-1);
+        
+  });
 });
