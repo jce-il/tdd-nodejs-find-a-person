@@ -33,4 +33,11 @@ describe('Find a person', function() { //green
     expect(posts).to.be.eql(-1);
         
   });
+    
+         it('given 2 numbers ..return the sum between them ', function() {
+    var map = new Map([3,6,7,8,6,20,22,9]);
+    var posts = map.findSum(6,3)
+    expect(posts).to.be.eql(9);
+        
+  });
 });

@@ -26,4 +26,8 @@ Map.prototype.findNeg = function(num) {
    
         return num*-1;  
   };
+Map.prototype.findSum = function(num1,num2) {
+   
+        return num1;  
+  };
 module.exports = Map;
