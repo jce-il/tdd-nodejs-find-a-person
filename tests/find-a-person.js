@@ -21,7 +21,7 @@ describe('Find a person', function() {
   });
     it('compare strings)', function() {
     var map = new Map([0,-1]);
-    var posts = map.compstr('hello','hello1')
+    var posts = map.compstr('hello','hello')
     expect(posts).to.be.eql(0);
   });
 });
