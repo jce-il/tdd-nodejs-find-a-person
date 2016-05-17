@@ -18,6 +18,8 @@ Map.prototype.sqwNum = function(num) {
 Map.prototype.compstr = function(str1,str2) {
   return str1.localeCompare(str2);
   };
-
+Map.prototype.addnum = function(num1,num2) {
+  return num1+num2;
+  };
 
 module.exports = Map;

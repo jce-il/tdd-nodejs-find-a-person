@@ -24,4 +24,9 @@ describe('Find a person', function() {
     var posts = map.compstr('hello','hello')
     expect(posts).to.be.eql(0);
   });
+    it('add numbers)', function() {
+    var map = new Map([1,3,5,8,10,11,13,14]);
+    var posts = map.addnum(4,6)
+    expect(posts).to.be.eql(11);
+  });
 });
