@@ -10,4 +10,9 @@ describe('Find a person', function() {
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
     
+    it('paw number', function() {
+    var map = new Map([3,5,7,16]);
+    var posts = map.pawNum(4)
+    expect(posts).to.be.eql(16);
+  });
 });
