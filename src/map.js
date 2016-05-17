@@ -42,6 +42,6 @@ Map.prototype.divisionIn2 = function(num)
 
 Map.prototype.numberMinus1 = function(num) 
 {
-    return num;
+    return num - 1;
 };
 module.exports = Map;
