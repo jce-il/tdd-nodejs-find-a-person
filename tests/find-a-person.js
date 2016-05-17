@@ -8,4 +8,10 @@ describe('Find a person', function() {
     var posts = map.find_a_person("Or A.")
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
+  
+  it('Given a person name,that dos not exist, return null', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var posts = map.find_a_person("Gitty")
+    expect(posts).to.be.eql([]);
+  });
 });
