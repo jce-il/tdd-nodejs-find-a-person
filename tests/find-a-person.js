@@ -42,5 +42,13 @@ describe('Find a person', function()
         var posts = map.minus(3,2)
         expect(posts).to.be.eql(1);
     });
+    
+    
+    it('Given a numbers, return the number division In 2', function() 
+    {
+        var map = new Map([0,1,2,3,4,5,6,7,8,9]);
+        var posts = map.divisionIn2(16)
+        expect(posts).to.be.eql(8);
+    });
 
 });

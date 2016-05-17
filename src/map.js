@@ -34,4 +34,9 @@ Map.prototype.minus = function(num1, num2)
 };
 
 
+Map.prototype.divisionIn2 = function(num) 
+{
+    return num;
+};
+
 module.exports = Map;
