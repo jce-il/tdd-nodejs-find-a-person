@@ -17,5 +17,13 @@ describe('Find a person', function()
         var posts = map.powNum(2)
         expect(posts).to.be.eql(4);
     });
+    
+    
+    it('Given 2 numbers, return the sum of them', function() 
+    {
+        var map = new Map([1,2,3,4,5,6,7,8,9]);
+        var posts = map.sum(2)
+        expect(posts).to.be.eql(4);
+    });
 
 });

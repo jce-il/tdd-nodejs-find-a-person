@@ -15,4 +15,11 @@ Map.prototype.powNum = function(num)
     return num * num;
 };
 
+
+Map.prototype.sum = function(num1, num2) 
+{
+    return num1;
+};
+
+
 module.exports = Map;
