@@ -50,3 +50,11 @@ describe('Find a car', function() {
     expect(posts).to.be.eql(["Hyundai made in Korea", "Hyundai and Kia are the same company"]);
   });
 });
+
+describe('power by 3', function() {
+  it('Given a number, returns number power 3', function() {
+    var map = new Map([27, 64, 81]);
+    var posts = map.pow(3)
+    expect(posts).to.be.eql(27);
+  });
+});
