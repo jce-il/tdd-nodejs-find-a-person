@@ -5,6 +5,6 @@ function Map(posts) {
 
 Map.prototype.find_a_person = function(name) {
   return [];
-  };
+  }; //First commit
 
 module.exports = Map;
