@@ -24,4 +24,6 @@ Map.prototype.sub = function(num){
 	return num-7;
 }
 
+
+
 module.exports = Map;

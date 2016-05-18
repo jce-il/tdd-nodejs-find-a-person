@@ -45,3 +45,12 @@ describe('A sub of 7',function(){
        
        });        
 });
+
+describe('A power of 2',function(){
+    it('Given a some number,return the power to 2',function(){
+       var mul=new Map([35,36,37]);
+       var res=mul.sub(6);
+       expect(res).to.be.eql(36);
+       
+       });        
+});
