@@ -12,4 +12,8 @@ Map.prototype.multiply = function(num){
 	return num*2;
 }
 
+Map.prototype.division = function(num){
+	return num/2;
+}
+
 module.exports = Map;
