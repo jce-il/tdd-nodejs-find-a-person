@@ -17,8 +17,14 @@ describe('Find a person', function() {
   });
     
   it(' Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
-    var map = new Map(["Kathmandu- Or A.", "Pokhara-Harry P.", "Lalitpur-Hermione G." ,"Birganj-Ron W."]);
+    var map = new Map(["Kathmandu- Or A.", "Pokhara-Harry P.", "Lalitpur-Hermione G." ,"Birganj-Ron W.","Butwal-Or A."]);
     var locations = map.find_a_person_location("Or A.")
+    expect(locations).to.be.eql([true]);
+  });
+    
+    it(' Check if there are map inconsistencies, e.g., the same name with different locations', function() {
+    var map = new Map(["Kathmandu- Or A.", "Pokhara-Harry P.", "Lalitpur-Hermione G." ,"Birganj-Ron W.","Butwal-Or A."]);
+    var locations = map.find_a_person_location_returns("Or A.")
     expect(locations).to.be.eql([true]);
   });
     

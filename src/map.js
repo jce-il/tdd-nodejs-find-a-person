@@ -20,4 +20,18 @@ Map.prototype.find_a_person_location = function(name) {
   return [false];
   };
 
+Map.prototype.find_a_person_location_returns = function(name) {
+    var count=0;
+    for(var i=0;i<this._posts.length-1;i++)
+        {
+            if(this._posts[i].endsWith(name))
+                count++;
+        }
+  if(count>2)
+      {
+          return [true]; 
+      }
+    return [false];
+  };
+
 module.exports = Map;
