@@ -27,7 +27,7 @@ Map.prototype.find_a_person_location_returns = function(name) {
             if(this._posts[i].endsWith(name))
                 count++;
         }
-  if(count>2)
+  if(count>0)
       {
           return [true]; 
       }
