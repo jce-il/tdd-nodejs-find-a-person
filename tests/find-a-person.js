@@ -26,3 +26,11 @@ describe('Subs by 5', function() {
     expect(posts).to.be.eql(13);
   });
 });
+
+describe('Add by 10', function() {
+  it('Given a number, returns number plus 10', function() {
+    var map = new Map([20, 30, 40]);
+    var posts = map.add(10)
+    expect(posts).to.be.eql(20);
+  });
+});
