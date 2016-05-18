@@ -9,3 +9,12 @@ describe('Find a person', function() {
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
 });
+
+
+describe('Muiltply by 2', function() {
+  it('Given a number, returns number multiply 2', function() {
+    var map = new Map([10, 12, 14]);
+    var posts = map.mult(6)
+    expect(posts).to.be.eql(12);
+  });
+});
