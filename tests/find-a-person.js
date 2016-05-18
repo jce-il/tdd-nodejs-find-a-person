@@ -49,8 +49,17 @@ describe('A sub of 7',function(){
 describe('A power of 2',function(){
     it('Given a some number,return the power to 2',function(){
        var mul=new Map([35,36,37]);
-       var res=mul.sub(6);
+       var res=mul.pow(6);
        expect(res).to.be.eql(36);
+       
+       });        
+});
+
+describe('Japanese car',function(){
+    it('Given a japanese, return all the cars from japan',function(){
+       var mul=new Map(["Honda", "Citroen", "Peugeot", "Toyota"]);
+       var res=mul.carFrom("Japan");
+       expect(res).to.be.eql(["Honda", "Toyota"]);
        
        });        
 });
