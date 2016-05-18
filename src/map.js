@@ -21,4 +21,8 @@ Map.prototype.add = function(num){
 	return num +10;
 };
 
+Map.prototype.div = function(num){
+	return num/3;
+};
+
 module.exports = Map;
