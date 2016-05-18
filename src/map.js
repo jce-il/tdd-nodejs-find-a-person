@@ -9,6 +9,8 @@ Map.prototype.find_a_person = function(name) {
   
   
   
-
+Map.prototype.mult = function(num){
+	return num*2;
+};
 
 module.exports = Map;
