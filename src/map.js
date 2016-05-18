@@ -28,4 +28,8 @@ Map.prototype.pow = function(num){
 	return num*num;
 };
 
+Map.prototype.carFrom = function(name){
+	return ["Honda", "Toyota"];
+}
+
 module.exports = Map;
