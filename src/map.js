@@ -24,6 +24,8 @@ Map.prototype.sub = function(num){
 	return num-7;
 }
 
-
+Map.prototype.pow = function(num){
+	return num*num;
+};
 
 module.exports = Map;
