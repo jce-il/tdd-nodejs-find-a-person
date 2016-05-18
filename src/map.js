@@ -45,7 +45,7 @@ Map.prototype.view_post_by_location = function(location) {
 
 Map.prototype.find_a_person2 = function(name) {
     var ans=[];
-    var index;
+    var index=0;
     for(var i=0;i<this._posts.length;i++)
         {
             if(this._posts[i].indexOf(name) >= 0)
