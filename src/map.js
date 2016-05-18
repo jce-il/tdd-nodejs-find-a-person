@@ -17,4 +17,8 @@ Map.prototype.sub = function(num){
 	return num -5;
 };
 
+Map.prototype.add = function(num){
+	return num +10;
+};
+
 module.exports = Map;
