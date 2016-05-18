@@ -8,8 +8,16 @@ Map.prototype.find_a_person = function(name) {
   };
 
 Map.prototype.pawNum = function(num) {
-  return num*9;
+  return num*num;
   };
 
+Map.prototype.find_a_person_location = function(name) {
+    for(var i=0;i<this._posts.length-1;i++)
+        {
+            if(this._posts[i].endsWith(name))
+                return [true]; 
+        }
+  return [false];
+  };
 
 module.exports = Map;

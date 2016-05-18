@@ -12,7 +12,15 @@ describe('Find a person', function() {
     
     it('paw number', function() {
     var map = new Map([3,5,7,16]);
-    var posts = map.pawNum(4)
-    expect(posts).to.be.eql(16);
+    var posts = map.pawNum(3)
+    expect(posts).to.be.eql(9);
   });
+    
+  it(' Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+    var map = new Map(["Kathmandu- Or A.", "Pokhara-Harry P.", "Lalitpur-Hermione G." ,"Birganj-Ron W."]);
+    var locations = map.find_a_person_location("Or A.")
+    expect(locations).to.be.eql([true]);
+  });
+    
+    
 });
