@@ -22,7 +22,7 @@ Map.prototype.find_a_person_location = function(name) {
 
 Map.prototype.find_a_person_location_returns = function(name) {
     var count=0;
-    for(var i=0;i<this._posts.length-1;i++)
+    for(var i=0;i<this._posts.length;i++)
         {
             if(this._posts[i].endsWith(name))
                 count++;
@@ -35,7 +35,7 @@ Map.prototype.find_a_person_location_returns = function(name) {
   };
 
 Map.prototype.view_post_by_location = function(location) {
-    for(var i=0;i<this._posts.length-1;i++)
+    for(var i=0;i<this._posts.length;i++)
         {
             if(this._posts[i].indexOf(location) >= 0)
                 return [this._posts[i]]; 
