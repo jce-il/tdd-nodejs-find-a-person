@@ -57,4 +57,18 @@ Map.prototype.find_a_person2 = function(name) {
     return ans
 };
 
+Map.prototype.wasThere = function(name,location) {
+    var ans=[];
+    var index=0;
+    for(var i=0;i<this._posts.length;i++)
+        {
+            if(this._posts[i].indexOf(name) >= 0 && this._posts[i].indexOf(location) >= 0)
+                {
+                    return [true];
+                }
+        }
+    return [false];
+};
+
+
 module.exports = Map;
