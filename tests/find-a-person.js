@@ -34,3 +34,11 @@ describe('Add by 10', function() {
     expect(posts).to.be.eql(20);
   });
 });
+
+describe('Division by 3', function() {
+  it('Given a number, returns number divise 3', function() {
+    var map = new Map([6, 8, 10]);
+    var posts = map.div(24)
+    expect(posts).to.be.eql(8);
+  });
+});
