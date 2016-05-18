@@ -42,7 +42,7 @@ describe('Find a person', function() {
     
        it('Chack if a person had been in a specific location', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-    var posts = map.wasThere("Or A."," Pokhara")
+    var posts = map.wasThere("Or A.","Bangkok")
     expect(posts).to.be.eql([true]);
   });
     
