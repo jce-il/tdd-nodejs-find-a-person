@@ -25,4 +25,8 @@ Map.prototype.div = function(num){
 	return num/3;
 };
 
+Map.prototype.findCar = function(name){
+	return ["Hyundai made in Korea", "Hyundai and Kia are the same company"];
+};
+
 module.exports = Map;
