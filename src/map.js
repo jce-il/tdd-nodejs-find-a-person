@@ -10,10 +10,14 @@ Map.prototype.find_a_person = function(name) {
  
 Map.prototype.multiply = function(num){
 	return num*2;
-}
+};
 
 Map.prototype.division = function(num){
 	return num/2;
-}
+};
+
+Map.prototype.addition = function(num){
+	return num+5;
+};
 
 module.exports = Map;
