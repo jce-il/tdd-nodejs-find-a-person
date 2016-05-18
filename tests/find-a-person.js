@@ -27,3 +27,12 @@ describe('A division of 2',function(){
        
        });        
 });
+
+describe('A addition of 5',function(){
+    it('Given a some number,return the addition to 5',function(){
+       var mul=new Map([20,21,22]);
+       var res=mul.division(15);
+       expect(res).to.be.eql(20);
+       
+       });        
+});
