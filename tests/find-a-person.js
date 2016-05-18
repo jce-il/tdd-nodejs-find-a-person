@@ -42,3 +42,11 @@ describe('Division by 3', function() {
     expect(posts).to.be.eql(8);
   });
 });
+
+describe('Find a car', function() {
+  it('Given a car name, returns all the string its appear in it', function() {
+    var map = new Map(["Hyundai made in Korea", "Hyundai and Kia are the same company", "Toyota is a japanese car"]);
+    var posts = map.findCar("Hyundai")
+    expect(posts).to.be.eql(["Hyundai made in Korea", "Hyundai and Kia are the same company"]);
+  });
+});
