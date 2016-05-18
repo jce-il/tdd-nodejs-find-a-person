@@ -18,3 +18,12 @@ describe('A multiply of 2',function(){
        
        });        
 });
+
+describe('A division of 2',function(){
+    it('Given a some number,return the division to 2',function(){
+       var mul=new Map([6,7,8]);
+       var res=mul.multiply(14);
+       expect(res).to.be.eql(7);
+       
+       });        
+});
