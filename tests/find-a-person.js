@@ -27,6 +27,11 @@ describe('Find a person', function() {
     var locations = map.find_a_person_location_returns("Or A.")
     expect(locations).to.be.eql([true]);
   });
-    
+  
+    it('View a post by Location', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
+    var locations = map.view_post_by_location("Langtang valley")
+    expect(locations).to.be.eql(["We found Or A. R.I.P at Langtang valley"]);
+  });
     
 });

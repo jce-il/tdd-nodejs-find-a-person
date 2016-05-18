@@ -34,4 +34,13 @@ Map.prototype.find_a_person_location_returns = function(name) {
     return [false];
   };
 
+Map.prototype.view_post_by_location = function(location) {
+    for(var i=0;i<this._posts.length-1;i++)
+        {
+            if(this._posts[i].indexOf(location) >= 0)
+                return [this._posts[i]]; 
+        }
+  return [false];
+  };
+
 module.exports = Map;
