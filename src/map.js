@@ -13,4 +13,8 @@ Map.prototype.mult = function(num){
 	return num*2;
 };
 
+Map.prototype.sub = function(num){
+	return num -5;
+};
+
 module.exports = Map;
