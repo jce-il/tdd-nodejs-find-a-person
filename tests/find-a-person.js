@@ -31,8 +31,17 @@ describe('A division of 2',function(){
 describe('A addition of 5',function(){
     it('Given a some number,return the addition to 5',function(){
        var mul=new Map([20,21,22]);
-       var res=mul.division(15);
+       var res=mul.addition(15);
        expect(res).to.be.eql(20);
+       
+       });        
+});
+
+describe('A sub of 7',function(){
+    it('Given a some number,return the sub to 7',function(){
+       var mul=new Map([20,21,22]);
+       var res=mul.sub(28);
+       expect(res).to.be.eql(21);
        
        });        
 });
