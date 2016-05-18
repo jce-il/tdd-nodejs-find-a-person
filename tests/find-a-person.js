@@ -18,3 +18,11 @@ describe('Muiltply by 2', function() {
     expect(posts).to.be.eql(12);
   });
 });
+
+describe('Subs by 5', function() {
+  it('Given a number, returns number subs 5', function() {
+    var map = new Map([8, 13, 20]);
+    var posts = map.sub(18)
+    expect(posts).to.be.eql(13);
+  });
+});
