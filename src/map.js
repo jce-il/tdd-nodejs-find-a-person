@@ -1,4 +1,4 @@
-
+// shon otmazgin 305394975
 function Map(posts) {
   this._posts = posts;
 }
