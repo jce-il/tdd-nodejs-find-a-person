@@ -33,3 +33,11 @@ describe('Is Exists a person and location', function () {
         expect(posts).to.be.eql(true);
     });
 });
+
+describe('Is Exists another person and location', function () {
+    it('Given a name, check if the map includes a location information for it (a place or geo. location)', function () {
+        var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Miri R.I.P", "Random post"]);
+        var posts = map.find_a_person_and_location("Miri")
+        expect(posts).to.be.eql(false);
+    });
+});
