@@ -24,5 +24,8 @@ Map.prototype.is_exists_person_and_location = function (name) {
     return flag;
 };
 
+Map.prototype.is_exists_map_inconsistencies = function (name) {
+    return false;
+};
 
 module.exports = Map;
