@@ -1,5 +1,8 @@
 // @Author: Miri Yakobi  - 021993035
 // @Date: 19/05/2016
+
+var allNames = ["Or A.", "Miri", "Ruth"];
+
 function Map(posts) {
   this._posts = posts;
 }
@@ -24,8 +27,18 @@ Map.prototype.is_exists_person_and_location = function (name) {
     return flag;
 };
 
-Map.prototype.is_exists_map_inconsistencies = function (name) {
-    return false;
+Map.prototype.is_exists_map_inconsistencies = function () {
+    var flag = false;
+    allNames.forEach(function (name) {
+        var count = 0;
+        this._posts.forEach(function (item) {
+            if (item.indexOf(name) > 0 && item.indexOf(" at ") > 0)
+                count++;
+        });
+        if(count >1)
+            flag = true;
+    });
+    return flag;
 };
 
 module.exports = Map;
