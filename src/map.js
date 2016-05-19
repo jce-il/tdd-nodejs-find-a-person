@@ -14,7 +14,7 @@ Map.prototype.find_a_person = function (name) {
     return arr;
 };
 
-Map.prototype.find_a_person_and_location = function (name) {
+Map.prototype.is_exists_person_and_location = function (name) {
     //this function return is there is location for the input name in the existing posts.
     var flag = false;
     this._posts.forEach(function (item) {

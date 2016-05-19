@@ -29,7 +29,7 @@ describe('Find a person - check an empty', function () {
 describe('Is Exists a person and location', function () {
     it('Given a name, check if the map includes a location information for it (a place or geo. location)', function () {
         var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-        var posts = map.find_a_person_and_location("Or A.")
+        var posts = map.is_exists_person_and_location("Or A.")
         expect(posts).to.be.eql(true);
     });
 });
@@ -37,7 +37,7 @@ describe('Is Exists a person and location', function () {
 describe('Is Exists - existing person without location', function () {
     it('Given a name, check if the map includes a location information for it (a place or geo. location)', function () {
         var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Miri R.I.P", "Random post"]);
-        var posts = map.find_a_person_and_location("Miri")
+        var posts = map.is_exists_person_and_location("Miri")
         expect(posts).to.be.eql(false);
     });
 });
@@ -45,7 +45,7 @@ describe('Is Exists - existing person without location', function () {
 describe('Is Exists - not existing person withou location', function () {
     it('Given a name, check if the map includes a location information for it (a place or geo. location)', function () {
         var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Miri R.I.P", "Random post"]);
-        var posts = map.find_a_person_and_location("Ruth")
+        var posts = map.is_exists_person_and_location("Ruth")
         expect(posts).to.be.eql(false);
     });
 });
