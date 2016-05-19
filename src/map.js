@@ -14,4 +14,14 @@ Map.prototype.find_a_person = function (name) {
     return arr;
 };
 
+Map.prototype.find_a_person_and_location = function (name) {
+    //this function return is there is location for the input name in the existing posts.
+    this._posts.forEach(function (item) {
+        if (item.indexOf(name) > 0 && item.indexOf(" at ") > 0)
+            return true;
+    });
+    return false;
+};
+
+
 module.exports = Map;
