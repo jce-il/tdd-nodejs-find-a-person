@@ -29,9 +29,10 @@ Map.prototype.is_exists_person_and_location = function (name) {
 
 Map.prototype.is_exists_map_inconsistencies = function () {
     var flag = false;
+    var that = this;
     allNames.forEach(function (name) {
         var count = 0;
-        this._posts.forEach(function (item) {
+        that._posts.forEach(function (item) {
             if (item.indexOf(name) > 0 && item.indexOf(" at ") > 0)
                 count++;
         });
