@@ -57,3 +57,11 @@ describe('Is Exists map inconsistencies', function () {
         expect(posts).to.be.eql(true);
     });
 });
+
+describe('Is Exists map inconsistencies - when there is no inconsistencies', function () {
+    it('Check if there are map inconsistencies, e.g., the same name with different locations', function () {
+        var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Miri R.I.P at Langtang valley", "Random post"]);
+        var posts = map.is_exists_map_inconsistencies()
+        expect(posts).to.be.eql(false);
+    });
+});
