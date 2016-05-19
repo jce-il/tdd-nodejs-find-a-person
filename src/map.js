@@ -16,11 +16,12 @@ Map.prototype.find_a_person = function (name) {
 
 Map.prototype.find_a_person_and_location = function (name) {
     //this function return is there is location for the input name in the existing posts.
+    var flag = false;
     this._posts.forEach(function (item) {
         if (item.indexOf(name) > 0 && item.indexOf(" at ") > 0)
-            return true;
+            flag = true;
     });
-    return false;
+    return flag;
 };
 
 
