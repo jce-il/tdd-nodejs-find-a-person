@@ -9,3 +9,52 @@ describe('Find a person', function() {
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
 });
+
+
+describe('Muiltply by 2', function() {
+  it('Given a number, returns number multiply 2', function() {
+    var map = new Map([10, 12, 14]);
+    var posts = map.mult(6)
+    expect(posts).to.be.eql(12);
+  });
+});
+
+describe('Subs by 5', function() {
+  it('Given a number, returns number subs 5', function() {
+    var map = new Map([8, 13, 20]);
+    var posts = map.sub(18)
+    expect(posts).to.be.eql(13);
+  });
+});
+
+describe('Add by 10', function() {
+  it('Given a number, returns number plus 10', function() {
+    var map = new Map([20, 30, 40]);
+    var posts = map.add(10)
+    expect(posts).to.be.eql(20);
+  });
+});
+
+describe('Division by 3', function() {
+  it('Given a number, returns number divise 3', function() {
+    var map = new Map([6, 8, 10]);
+    var posts = map.div(24)
+    expect(posts).to.be.eql(8);
+  });
+});
+
+describe('Find a car', function() {
+  it('Given a car name, returns all the string its appear in it', function() {
+    var map = new Map(["Hyundai made in Korea", "Hyundai and Kia are the same company", "Toyota is a japanese car"]);
+    var posts = map.findCar("Hyundai")
+    expect(posts).to.be.eql(["Hyundai made in Korea", "Hyundai and Kia are the same company"]);
+  });
+});
+
+describe('power by 3', function() {
+  it('Given a number, returns number power 3', function() {
+    var map = new Map([27, 64, 81]);
+    var posts = map.pow(3)
+    expect(posts).to.be.eql(27);
+  });
+});
