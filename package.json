@@ -3,10 +3,12 @@
   "repository": "github:jce-il/tdd-nodejs-find-a-person",
   "scripts": {
     "test": "mocha tests --recursive",
-    "watch": "mocha tests --recursive --watch"
+    "watch": "mocha tests --recursive --watch",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- tests -R spec && codecov"
   },    
   "devDependencies": {
     "chai": "^3.4.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "istanbul": ">0.3.2"
   }
 }

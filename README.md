@@ -2,6 +2,7 @@
 A repository and starter for HW4 of the JCE [Software Engineering Course](https://github.com/jce-il/se-class/wiki/)
 
 [![Build Status](https://travis-ci.org/jce-il/tdd-nodejs-find-a-person.svg?branch=master)](https://travis-ci.org/jce-il/tdd-nodejs-find-a-person)
+[![codecov.io](https://codecov.io/gh/jce-il/tdd-nodejs-find-a-person/coverage.svg?branch=master)](https://codecov.io/gh/jce-il/tdd-nodejs-find-a-person)
 
 ### Intro
 In this homework we are exercising [Test Driven Development](http://en.wikipedia.org/wiki/Test-driven_development).
