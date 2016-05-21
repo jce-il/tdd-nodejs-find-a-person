@@ -15,5 +15,5 @@ describe('Find a person', function() {
       var posts = map.find_by_loc("Or A.")
       expect(posts).to.be.eql(true);
     });
-  });
+  }); 
 });
