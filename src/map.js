@@ -22,6 +22,10 @@ Map.prototype.find_loc = function(name) {
   };
 
 Map.prototype.isInc= function(name) {
+    var posts = this.find_a_person(name);
+    if(posts.length>1)
+        return true;
+    
     return false;
   };
 
