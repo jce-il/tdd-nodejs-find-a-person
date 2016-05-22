@@ -22,6 +22,8 @@ Map.prototype.check_for_location = function(person){
 	
 	
 Map.prototype.isInconsistencies = function(person) {
+    if(this.find_a_person(person).length > 1)
+        return true;
      return false;
  };
  
