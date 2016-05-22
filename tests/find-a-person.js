@@ -22,4 +22,10 @@ describe('Find a person', function() {
     expect(inc).to.be.eql(true);
   });
     
+    it('Given a person name and a location, check if the the person and the location are in the same post', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var inc = map.in_location("Or A.", "Chabad house")
+    expect(inc).to.be.eql(true);
+  });
+    
 });
