@@ -21,6 +21,12 @@ Map.prototype.find_loc = function(name) {
     return false;
   };
 
+Map.prototype.isInc= function(name) {
+    return false;
+  };
+
+
+
 module.exports = Map;
 
 
