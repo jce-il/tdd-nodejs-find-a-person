@@ -16,11 +16,23 @@ describe('Find a person', function() {
     expect(loc).to.be.eql(true);
   });
     
- it('Given a person name, return all posts (of a map) containing her name (in any of a post fields)', function() {
+ it('Given a person name, checking if there is inconsistence by the location of the person', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
     var inc = map.isInc("Or A.")
     expect(inc).to.be.eql(true);
   });
+    
+    
+  it('checking if there is incosistence with a person, remove all the problematic posts', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var posts = map.revomeInc("Or A.")
+    expect(posts).to.be.eql(["Random post"]);
+  });
+    
+    
+    
+    
+    
     
     
 });

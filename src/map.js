@@ -29,6 +29,13 @@ Map.prototype.isInc= function(name) {
     return false;
   };
 
+Map.prototype.revomeInc=function(name) {
+    
+  return[];
+};
+
+
+
 
 
 module.exports = Map;
