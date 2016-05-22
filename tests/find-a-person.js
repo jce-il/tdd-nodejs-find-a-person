@@ -10,3 +10,11 @@ describe('Find a person', function () {
         expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
     });
 });
+
+describe('Find location info', function () {
+    it('Given a name, check if the map includes a location information for it (a place or geo. location)', function () {
+        var map = new Map(['a','b']);
+        var output = map.get_location_info("Or A")
+        expect(output).to.be.eql(true);
+    });
+});
