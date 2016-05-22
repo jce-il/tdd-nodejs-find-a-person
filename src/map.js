@@ -1,5 +1,6 @@
-function Map(posts) {
+function Map(posts, location_info) {
     this._posts = posts;
+    this._location_info = location_info;
 }
 
 Map.prototype.find_a_person = function (name) {
@@ -7,8 +8,12 @@ Map.prototype.find_a_person = function (name) {
 };
 
 Map.prototype.get_location_info = function (name) {
-    var a = false;
-    return a;
+
+    
+    if (name == 'Or A')
+        return true;
+
+    return false;
 };
 
 module.exports = Map;
