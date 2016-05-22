@@ -16,4 +16,10 @@ describe('Find a person', function() {
     expect(loc).to.be.eql(true);
   });
     
+    it('Given a person name, checking if there is inconsistence by the location of the person', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var inc = map.is_consistencies("Or A.")
+    expect(inc).to.be.eql(true);
+  });
+    
 });
