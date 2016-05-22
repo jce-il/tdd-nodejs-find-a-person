@@ -9,10 +9,14 @@ Map.prototype.find_a_person = function (name) {
 
 Map.prototype.get_location_info = function (name) {
 
-    
+
     if (name == 'Or A')
         return true;
 
+    return false;
+};
+
+Map.prototype.find_map_inconsistencies = function (map) {
     return false;
 };
 

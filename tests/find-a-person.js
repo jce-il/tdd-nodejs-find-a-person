@@ -19,3 +19,12 @@ describe('Find location info', function () {
         expect(output).to.be.eql(true);
     });
 });
+
+describe('Find map inconsistencies', function () {
+    it('Check if there are map inconsistencies, e.g., the same name with different locations. ', function () {
+        var map = new Map(['a','b'], ['a','Or A']);
+
+        var output = map.find_map_inconsistencies('nepal map');
+        expect(output).to.be.eql(true);
+    });
+});
