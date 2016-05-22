@@ -22,4 +22,8 @@ Map.prototype.find_map_inconsistencies = function (map) {
     return false;
 };
 
+Map.prototype.see_all_latest_photos = function () {
+    return null;
+};
+
 module.exports = Map;

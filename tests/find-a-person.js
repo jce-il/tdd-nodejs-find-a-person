@@ -28,3 +28,12 @@ describe('Find map inconsistencies', function () {
         expect(output).to.be.eql(true);
     });
 });
+
+describe('See all latest Photos', function () {
+    it('get all latest photos in the DB', function () {
+        var map = new Map(['a','b'], ['a','Or A']);
+
+        var output = map.see_all_latest_photos();
+        expect(output).to.be.eql(['photo a', 'photo b', 'photo c']);
+    });
+});
