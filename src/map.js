@@ -14,8 +14,11 @@ Map.prototype.find_a_person = function(name) {
 
 Map.prototype.find_loc = function(name) {
    
-            
-  return false;
+    var loc=[];
+    for(var i=0; i<this._posts.length; i++)
+        if(this._posts[i].search(name) >=0)
+            return true;
+    return false;
   };
 
 module.exports = Map;
