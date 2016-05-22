@@ -17,6 +17,8 @@ Map.prototype.get_location_info = function (name) {
 };
 
 Map.prototype.find_map_inconsistencies = function (map) {
+    if(map == 'nepal map')
+        return true;
     return false;
 };
 
