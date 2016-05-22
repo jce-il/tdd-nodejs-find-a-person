@@ -31,7 +31,16 @@ Map.prototype.isInc= function(name) {
 
 Map.prototype.revomeInc=function(name) {
     
-  return[];
+    if(!this.isInc)
+        return this._posts;
+     var posts=[];
+    
+    for(var i=0; i<this._posts.length; i++)
+        if(this._posts[i].search(name)< 0)
+            posts.push(this._posts[i]);
+            
+  return posts;
+ 
 };
 
 
