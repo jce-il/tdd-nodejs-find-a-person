@@ -22,10 +22,12 @@ Map.prototype.find_location = function(name) {
 
 Map.prototype.isInconsistencies = function(name) {
     
+    var posts = this.find_a_person(name);
+    
+    if (posts.length > 1)
+        return true;
     
     return false;
   };
-
-
 
 module.exports = Map;
