@@ -23,7 +23,7 @@ Map.prototype.find_map_inconsistencies = function (map) {
 };
 
 Map.prototype.see_all_latest_photos = function () {
-    return null;
+    return ['photo a', 'photo b', 'photo c'];
 };
 
 module.exports = Map;
