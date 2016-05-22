@@ -1,3 +1,4 @@
+//Nir Ben Amram - 200679546 
 var chai = require('chai');
 var expect = chai.expect; // we are using the "expect" style of Chai
 var Map = require('./../src/map');
@@ -8,4 +9,5 @@ describe('Find a person', function() {
     var posts = map.find_a_person("Or A.")
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
+  
 });
