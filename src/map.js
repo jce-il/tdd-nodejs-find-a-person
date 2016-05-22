@@ -1,4 +1,4 @@
-
+//Adam hudeda 201570793
 function Map(posts) {
   this._posts = posts;
 }
