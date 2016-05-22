@@ -23,4 +23,10 @@ describe('Find a person', function() {
     expect(inconsistencies).to.be.eql(true);
   });
     
+  it('Check if there are map inconsistencies then remove all the problematic posts', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var posts = map.remove_posts("Or A.");
+    expect(posts).to.be.eql(["Random post"]);
+  });
+    
 });
