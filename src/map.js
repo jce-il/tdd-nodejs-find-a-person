@@ -18,6 +18,6 @@ Map.prototype.find_a_person = function(person) {
   
 Map.prototype.check_for_location = function(person){
  
- 	return false;};
+ 	return true;};
   
 module.exports = Map;
