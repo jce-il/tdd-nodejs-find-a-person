@@ -27,5 +27,10 @@ Map.prototype.isInconsistencies = function(person) {
      return false;
  };
  
+Map.prototype.remove_a_posts_by_name = function(person) {
+    return false; 
+};
+
+ 
   
 module.exports = Map;
