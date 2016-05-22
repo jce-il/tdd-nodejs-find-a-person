@@ -22,6 +22,18 @@ Map.prototype.find_a_location = function(name) {
     }
     return false;
 };
+
+Map.prototype.is_consistencies = function(name) {
+    var post=[];
+    for(var i=0; i< this._posts.length; i++)
+    {
+        if(this._posts[i].search(name) >= 0)
+           post.push(this._posts[i]);
+    }
+    if (post.length>=2)
+        return true;
+    return false;
+};
       
 
 module.exports = Map;
