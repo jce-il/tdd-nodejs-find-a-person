@@ -1,4 +1,4 @@
-
+//ofir nagadi
 function Map(posts) {
   this._posts = posts;
 }
