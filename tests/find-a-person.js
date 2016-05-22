@@ -11,3 +11,11 @@ describe('Find a person', function() {
   });
   
 });
+
+describe('Find by location', function() {
+  it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var result = map.check_for_location("Or A.")
+    expect(result).to.be.eql(true);
+  });
+});

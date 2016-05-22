@@ -15,4 +15,9 @@ Map.prototype.find_a_person = function(person) {
  	return results;
   };
 
+  
+Map.prototype.check_for_location = function(person){
+ 
+ 	return false;};
+  
 module.exports = Map;
