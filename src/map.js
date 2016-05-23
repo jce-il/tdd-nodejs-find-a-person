@@ -18,6 +18,8 @@ Map.prototype.find_a_location = function(name) {
 };
 
 Map.prototype.isInconsistencies = function(name) {
+    if(this.find_a_person(name).length >= 2)
+        return true;
     return false;
 };
 
