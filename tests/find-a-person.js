@@ -25,3 +25,11 @@ describe('Check inconsistencies map', function() {
 		expect(posts).to.be.eql(true);
 	});
 });
+
+describe('Check if visited by somebody', function() {
+	it('Given somebodys name and location, Check if somebody visited this location', function() {
+		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+		var posts = map.check_if_visited_by_somebody("Jerusalem", "Or A.")
+		expect(posts).to.be.eql(false);
+	});
+});

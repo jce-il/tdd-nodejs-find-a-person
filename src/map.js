@@ -29,4 +29,8 @@ Map.prototype.check_inconsistencies_map = function(name) {
 	return false;
 }
 
+Map.prototype.check_if_visited_by_somebody = function(location, name) {
+	return true;
+}
+
 module.exports = Map;
