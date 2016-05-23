@@ -19,5 +19,10 @@ Map.prototype.find_a_person = function(name) {
  	}
  	return false;
  };
+ Map.prototype.mapIncons = function(name) {
+ 	
+ 	}
+ 	return false;
+ };
 
 module.exports = Map;
