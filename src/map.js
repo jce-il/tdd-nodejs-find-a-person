@@ -34,4 +34,8 @@ Map.prototype.map_inconsistencies = function(name) {
 	return false;
 };
 
+Map.prototype.find_a_location = function(name) {
+	return [];
+};
+
 module.exports = Map;

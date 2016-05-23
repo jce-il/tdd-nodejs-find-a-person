@@ -26,3 +26,11 @@ describe('Check if the map inconsistencies', function() {
     expect(iSinconsistencies).to.be.eql(true);
   });
 });
+
+describe('Find a location', function() {
+  it('Given a location name, return all posts (of a map) containing this location (in any of a post fields)', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var posts = map.find_a_location("Bangkok")
+  expect(post).to.be.eql(["I met Or A. at Chabad house Bangkok"]);
+  });
+});
