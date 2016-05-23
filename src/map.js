@@ -15,6 +15,17 @@ Map.prototype.find_by_location = function(name) {
 };
 
 Map.prototype.check_inconsistencies_map = function(name) {
+	var firstRes = false;
+	
+	for(var i = 0; i < this._posts.length; i++){
+		if (this._posts[i].search(name) >= 0){
+			if (firstRes)
+                return true;
+			else
+                firstRes = true;
+		}
+	}
+	
 	return false;
 }
 
