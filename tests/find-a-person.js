@@ -22,3 +22,9 @@ describe('Name match (bool)', function() {
      expect(posts).to.be.eql(true);
    });
  }); 
+ describe('Map inconsistencies second test', function() {
+   it('Check if there are map inconsistencies', function() {
+     var posts = map.mapIncons("Amit B.")
+     expect(posts).to.be.eql(false);
+   });
+ });
