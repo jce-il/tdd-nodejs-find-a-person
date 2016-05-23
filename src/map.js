@@ -24,4 +24,11 @@ Map.prototype.isInconsistencies = function(name) {
 	return false;
 };
 
+Map.prototype.is_name_show_by_post = function(name) {
+		for(var i =0; i<this._posts.length; i++)
+			if(this._posts[i].search(name) < 0)
+				return true;
+		return false; 
+	}
+
 module.exports = Map;

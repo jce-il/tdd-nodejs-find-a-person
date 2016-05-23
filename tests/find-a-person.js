@@ -24,9 +24,7 @@ describe('Find a person', function() {
 	it('Given a person name, check if he appears in a post', function() {
 		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
 		var isAppear = map.is_name_show_by_post("Or A.");
-		expect(isAppear).to.be.eql(false);
+		expect(isAppear).to.be.eql(true);
 	});
-	
-
  
 });
