@@ -13,4 +13,8 @@ Map.prototype.find_a_person = function(name) {
 	return posts_contain_person_name;
 };
 
+Map.prototype.check_location = function(name) {
+	
+};
+
 module.exports = Map;
