@@ -23,6 +23,14 @@ Map.prototype.check_location = function(name) {
 };
 
 Map.prototype.map_inconsistencies = function(name) {
+	var posts_contain_person_name = [];
+	for(i=0; i<this._posts.length; i++)
+	{
+		if(this._posts[i].includes(name))
+			posts_contain_person_name.push(this._posts[i]);
+	}
+	if(posts_contain_person_name.length > 1)
+		return true;
 	return false;
 };
 
