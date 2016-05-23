@@ -30,4 +30,8 @@ Map.prototype.find_a_location = function(name) {
  	return false;
 };
 
+Map.prototype.check_inconsistencies_map = function(name) {
+	return false;
+}
+
 module.exports = Map;
