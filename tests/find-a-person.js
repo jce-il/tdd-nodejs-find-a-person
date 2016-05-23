@@ -18,7 +18,7 @@ describe('Name match (bool)', function() {
  });
  describe('Map inconsistencies first test', function() {
     it('check if there are map inconsistencies (different location) ', function() {
-     var posts = map.map_inconsist("Or A.")
+     var posts = map.mapIncons("Or A.")
      expect(posts).to.be.eql(true);
    });
  }); 

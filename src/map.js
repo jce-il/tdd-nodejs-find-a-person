@@ -20,7 +20,13 @@ Map.prototype.find_a_person = function(name) {
  	return false;
  };
  Map.prototype.mapIncons = function(name) {
- 	
+ 	var counter = 0;
+ 	var length = this._posts.length;
+ 	for (i=0; i<length; i++) {
+ 		if (this._posts[i].search(name) != -1)
+ 			counter++;
+ 		if (counter > 1)
+ 			return true;
  	}
  	return false;
  };
