@@ -28,5 +28,8 @@ Map.prototype.find_inconsistencies = function(name) {
     return false;
   };
 
+Map.prototype.remove_posts = function(name) {
+    return false;
+  };
 
 module.exports = Map;
