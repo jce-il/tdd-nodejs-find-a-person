@@ -31,6 +31,14 @@ Map.prototype.check_inconsistencies_map = function(name) {
 }
 
 Map.prototype.check_if_person_visit_location = function(name, location) {
+	var i;
+	
+	for(i = 0; i < this._posts.length; i++){
+		if (this._posts[i].search(name) >= 0 && this._posts[i].search(location) >= 0){
+				return true;
+		}
+	}
+	
 	return false;
 }
 
