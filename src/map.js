@@ -40,6 +40,23 @@ Map.prototype.check_inconsistencies_map = function(name) {
 }
 
 Map.prototype.check_if_visited = function(name, location) {
+	
+	var x;
+ 	var visitedLocation = [];
+ 	
+ 	for(x = 0; x < (this._posts.length); x++){
+ 		if (this._posts[x].search(name) !== -1){
+ 			visitedLocation[x] = 1;
+ 		} else{
+ 			visitedLocation[x] = 0;
+ 		}
+ 		
+ 		if (this._posts[x].search(location) !== -1){
+ 			if (visitedLocation[x] === 1)
+ 				return true;
+ 		}
+ 	}
+	
 	return false;
 }
 
