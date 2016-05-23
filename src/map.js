@@ -16,4 +16,5 @@ Map.prototype.is_inconsistencies = function(name) {
     return true;
   return false;
 };
+
 module.exports = Map;
