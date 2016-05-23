@@ -4,7 +4,8 @@ function Map(posts) {
 }
 
 Map.prototype.find_a_person = function(name) {
-  return [];
+	
+  return ["now red"];
   };
 
 module.exports = Map;
