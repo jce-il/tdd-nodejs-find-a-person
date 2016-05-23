@@ -19,6 +19,15 @@ Map.prototype.find_a_person = function(name) {
 };
 
 Map.prototype.find_a_location = function(name) {
+	var i;
+	var length = this._posts.length;
+	var post = [];
+	
+	for(i = 0; i < length; i++){
+		if (this._posts[i].search(name) !== -1)
+			return true;
+	}
+	
 	return false;
 };
 
