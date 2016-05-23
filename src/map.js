@@ -15,7 +15,7 @@ Map.prototype.find_by_location = function(name) {
 };
 
 Map.prototype.check_inconsistencies_map = function(name) {
-	return true;
+	return false;
 }
 
 Map.prototype.check_if_person_visit_location = function(name, location) {
