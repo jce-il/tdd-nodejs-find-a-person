@@ -18,3 +18,11 @@ describe('Check if have location', function() {
     expect(locationExist).to.be.eql(true);
   });
 });
+
+describe('Check if the map inconsistencies', function() {
+  it('Check if there are map inconsistencies, e.g., the same name with different locations.', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var iSinconsistencies = map.map_inconsistencies("Or A.")
+    expect(iSinconsistencies).to.be.eql(true);
+  });
+});
