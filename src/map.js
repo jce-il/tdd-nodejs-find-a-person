@@ -1,4 +1,4 @@
-
+// Lior Sapir Software Engineering student.
 function Map(posts) {
   this._posts = posts;
 }
