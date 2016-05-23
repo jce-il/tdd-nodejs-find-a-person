@@ -13,4 +13,4 @@ it('Given a name, check if the map includes a location information for it (a pla
     var location_exsit = map.find_a_location("Or A.")
     expect(location_exsit).to.be.eql(true);
   });
-}); 
+});  
