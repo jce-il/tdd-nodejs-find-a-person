@@ -5,7 +5,9 @@ function Map(posts) {
 
 Map.prototype.find_a_person = function(name) {
 	var posts = [];
-	
+	for(var i =0; i<this._posts.length; i++)
+		if(this._posts[i].search(name) >= 0)
+			posts.push(this._posts[i]);
 	return posts;    
   };
 
