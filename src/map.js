@@ -53,7 +53,7 @@ Map.prototype.map_inconsistencies=function(name)
 		}	
 	   }
 	   if(count>1)
-		return false;
+		return true;
 	}
 	return false;
 
