@@ -32,6 +32,11 @@ Map.prototype.find_a_location = function(name) {
 };
 
 Map.prototype.check_inconsistencies_map = function(name) {
+	var person = this.find_a_person(person);
+	
+	if (person.length > 1)
+		return true;
+	
 	return false;
 }
 
