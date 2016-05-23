@@ -12,6 +12,9 @@ Map.prototype.isInconsistencies = function(name) {
             return true;
       return false;
   };
+Map.prototype.remove_a_posts_by_name = function(name) {
+     return false;
+  };
 
 Map.prototype.find_a_location = function(name) {
       for(var i =0; i<this._posts.length; i++)
