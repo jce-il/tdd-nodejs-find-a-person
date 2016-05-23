@@ -1,4 +1,4 @@
-
+//tal garusi
 function Map(posts) {
   this._posts = posts;
 }
