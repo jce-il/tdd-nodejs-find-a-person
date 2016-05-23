@@ -37,4 +37,25 @@ Map.prototype.include_location = function(name)
 	
 	return flag;
   };
+Map.prototype.map_inconsistencies=function(name) 
+{
+	var names=["Or A.","Ruth S."];
+	var flag="false";
+	for(i=0;i<names.length;i++)
+	{
+	   count=0;
+	   for(j=0;j<this._posts.length;j++)
+	   {
+	  	var n=this._posts[j].indexOf(names[i]);
+	        if(n!=-1)
+	        {
+		   count++;	
+		}	
+	   }
+	   if(count>1)
+		return false;
+	}
+	return false;
+
+  };
 module.exports = Map;

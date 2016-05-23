@@ -26,3 +26,12 @@ describe('Include location', function() {
   });
 
 });
+describe('map inconsistencies', function() {
+  it('Check if there are map inconsistencies', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var posts = map.map_inconsistencies("posts")
+    expect(posts).to.be.eql(true);
+     	
+  });
+
+});
