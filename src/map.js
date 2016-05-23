@@ -18,13 +18,10 @@ Map.prototype.find_a_location = function(name) {
     return false;
 };
 
-Map.prototype.remove_a_posts_by_name = function(name) {
-    var posts = [];
-    for(var i =0; i<this._posts.length; i++)
-        if(this._posts[i].search(name) < 0)
-            posts.push(this._posts[i]);
-    this._posts = posts;
-    return posts; 
+Map.prototype.isInconsistencies = function(name) {
+    if(this.find_a_person(name).length >= 2)
+         return true;
+     return false;
 };
 
 module.exports = Map;
