@@ -41,6 +41,24 @@ Map.prototype.check_inconsistencies_map = function(name) {
 }
 
 Map.prototype.check_visitation_by_person = function(name, location) {
+	var i;
+	var length = this._posts.length;
+	var visitedPlaces = [];
+	
+	for(i = 0; i < length; i++){
+		if (this._posts[i].search(name) !== -1){
+			visitedPlaces[i] = 1;
+		} else{
+			visitedPlaces[i] = 0;
+		}
+		
+		if (this._posts[i].search(location) !== -1){
+			if (visitedPlaces[i] === 1)
+				return true;
+		}
+	}
+	
 	return false;
 }
+
 module.exports = Map;
