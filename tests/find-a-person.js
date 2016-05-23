@@ -9,10 +9,16 @@ describe('Find a person', function() {
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
   
-  it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
-    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-    var location_exsit = map.find_a_location("Or A.");
-    expect(location_exsit).to.be.eql(true);
-  });
-  
+	it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+		var location_exsit = map.find_a_location("Or A.");
+		expect(location_exsit).to.be.eql(true);
+	});
+
+	it('Check if there are map inconsistencies, e.g., the same name with different locations', function() {  
+		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+		var isInconsistencies = map.isInconsistencies("Or A.");
+		expect(isInconsistencies).to.be.eql(true);
+	});
+ 
 });
