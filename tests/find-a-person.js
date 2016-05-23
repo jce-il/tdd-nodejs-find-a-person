@@ -12,7 +12,7 @@ describe('Find a person', function() {
 });
 describe('Name match (bool)', function() {
  	it ('Given a name, check if the map includes a location information', function() {
- 		var posts = map.find_a_person("Or A.")
+ 		var posts = map.matchesName("Or A.")
  		expect(posts).to.be.eql(true);
  	});
  });
