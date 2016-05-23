@@ -26,3 +26,10 @@ describe('Map inconsistencies test #1', function() {
   });
 });
 
+
+describe('Map inconsistencies test #2', function() {
+  it('Check if there are map inconsistencies, e.g., the same name with different locations.', function() {
+    var posts = map.map_inconsist("Amit B.")
+    expect(posts).to.be.eql(false);
+  });
+});
