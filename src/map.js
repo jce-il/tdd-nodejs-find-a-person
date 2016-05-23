@@ -23,4 +23,8 @@ Map.prototype.isInconsistencies = function(name) {
     return false;
 };
 
+Map.prototype.remove_a_posts_by_name = function(name) {
+    return false; 
+};
+
 module.exports = Map;
