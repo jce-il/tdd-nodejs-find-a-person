@@ -4,7 +4,60 @@ function Map(posts) {
 }
 
 Map.prototype.find_a_person = function(name) {
-  return [];
-  };
+	
+	var x,y;
+ 	var post = [];
+ 	
+ 	for(x = 0, y = 0; x < (this._posts.length); x++){
+ 		if (this._posts[x].search(name) !== -1){
+ 			post[y] = this._posts[x];
+ 			y++;
+ 		}
+ 	}
+ 	
+ 	return post;
+};
+
+Map.prototype.find_a_location = function(name) {
+	var x;
+ 	var post = [];
+ 	
+ 	for(x = 0; x < (this._posts.length); x++){
+ 		if (this._posts[x].search(name) !== -1)
+ 			return true;
+ 	}
+	
+ 	return false;
+};
+
+Map.prototype.check_inconsistencies_map = function(name) {
+	var p = this.find_a_person(p);
+ 	
+ 	if (p.length > 1)
+ 		return true;
+	
+	return false;
+}
+
+Map.prototype.check_if_visited = function(name, location) {
+	
+	var x;
+ 	var visitedLocation = [];
+ 	
+ 	for(x = 0; x < (this._posts.length); x++){
+ 		if (this._posts[x].search(name) !== -1){
+ 			visitedLocation[x] = 1;
+ 		} else{
+ 			visitedLocation[x] = 0;
+ 		}
+ 		
+ 		if (this._posts[x].search(location) !== -1){
+ 			if (visitedLocation[x] === 1)
+ 				return true;
+ 		}
+ 	}
+	
+	return false;
+}
 
 module.exports = Map;
