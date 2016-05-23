@@ -11,4 +11,9 @@ Map.prototype.find_by_loc = function(name) {
     return true;
   return false;
 };
+Map.prototype.is_inconsistencies = function(name) {
+  if(this.find_a_person(name).length>1)
+    return true;
+  return false;
+};
 module.exports = Map;
