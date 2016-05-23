@@ -40,4 +40,7 @@ Map.prototype.check_inconsistencies_map = function(name) {
 	return false;
 }
 
+Map.prototype.check_visitation_by_person = function(name, location) {
+	return false;
+}
 module.exports = Map;
