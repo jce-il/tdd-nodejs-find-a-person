@@ -17,3 +17,11 @@ describe('Name match found (bool)', function() {
 		expect(posts).to.be.eql(true);
 	});
 });
+
+
+describe('Map inconsistencies test #1', function() {
+  it('heck if there are map inconsistencies, e.g., the same name with different locations.', function() {
+    var posts = map.map_inconsist("Or A.")
+    expect(posts).to.be.eql(true);
+  });
+});
