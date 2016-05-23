@@ -13,7 +13,7 @@ describe('Find a person', function() {
 
 describe('Name match found (bool)', function() {
  	it ('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
- 		var posts = map.find_a_person("Or A.")
+ 		var posts = map.name_matches("Or A.")
  		expect(posts).to.be.eql(true);
  	});
  });
