@@ -8,4 +8,16 @@ describe('Find a person', function() {
     var posts = map.find_a_person("Or A.")
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
+  
+  it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+	var loc = map.find_a_location("Or A.");
+	expect(loc).to.be.eql(true);
+  });
+  
+ it('Check if there are map inconsistencies, e.g., the same name with different locations', function() {
+	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+	var diffloc = map.find_a_difflocation();
+	expect(diffloc).to.be.eql(true);
+  });
 });
