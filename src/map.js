@@ -30,7 +30,7 @@ Map.prototype.include_location = function(name)
 		{
 	            var l=this._posts[i].indexOf(places[j]);
 		    if(l!=-1)	
-			flag="false";	
+			flag="true";	
 		}	
 	    }
 	}
