@@ -13,7 +13,12 @@ Map.prototype.isInconsistencies = function(name) {
       return false;
   };
 Map.prototype.remove_a_posts_by_name = function(name) {
-     return false;
+      var post = [];
+      for(var i =0; i<this._posts.length; i++)
+            if(this._posts[i].search(name) < 0)
+                post.push(this._posts[i]);
+      this._posts = post;
+  return post;
   };
 
 Map.prototype.find_a_location = function(name) {
