@@ -28,3 +28,12 @@ describe('Check inconsistencies map', function() {
 	});
   
 });
+ 
+describe('Check if visited', function() {
+	it('Check if a person visited a location given a name and location', function() {
+		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+ 		var posts = map.check_visitation_by_person("Or A.", "Langtang valley");
+ 		expect(posts).to.be.eql(true);
+	});
+  
+});
