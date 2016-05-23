@@ -13,11 +13,11 @@ Map.prototype.find_a_person = function(name) {
  }; 
 
 Map.prototype.find_inconsistencies = function(name){
- 	return true;
+ 	return false;
  };
 
 Map.prototype.find_any_collaboration = function(name){
- 	return true;
+ 	return false;
  };
 
 
