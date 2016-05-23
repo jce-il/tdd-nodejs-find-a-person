@@ -30,7 +30,13 @@ Map.prototype.check_inconsistencies_map = function(name) {
 }
 
 Map.prototype.check_if_visited_by_somebody = function(location, name) {
-	return true;
+	for(var i = 0; i < this._posts.length; i++){
+		if (this._posts[i].search(location) >= 0 && this._posts[i].search(name) >= 0){
+				return true;
+		}
+	}
+	
+	return false;
 }
 
 module.exports = Map;
