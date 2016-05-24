@@ -19,7 +19,7 @@ Map.prototype.find_by_loc = function(name) {
   return false;
 };
 
-Map.prototype.inconsistent_in_loc = function(name) {
+Map.prototype.inconsistent_in_map = function(name) {
   if(this.find_a_person(name).length >= 2)
     return true;
   return false;

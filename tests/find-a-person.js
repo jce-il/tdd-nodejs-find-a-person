@@ -18,7 +18,7 @@ describe('Find by Location', function() {
 describe('Map Inconsistencies', function() {
   it('Check if there are map inconsistencies', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-    var posts = map.inconsistent_in_loc("Or A.")
+    var posts = map.inconsistent_in_map("Or A.")
     expect(posts).to.be.eql(true);
   });
 });
