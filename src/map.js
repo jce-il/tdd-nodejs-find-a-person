@@ -57,7 +57,7 @@ Map.prototype.find_location = function(name){
 
 
 Map.prototype.find_inconsistencies = function(name){
-  	return false;
+  	return true;
   };
 
 module.exports = Map;
