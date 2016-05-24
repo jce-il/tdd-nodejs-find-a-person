@@ -12,7 +12,7 @@ Map.prototype.find_a_person = function(name) {
 
 
 Map.prototype.find_a_true = function(name) {
-        return false;        
+        return true;        
   };
 
 Map.prototype.find_a_true2 = function(name) {
