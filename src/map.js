@@ -19,4 +19,7 @@ Map.prototype.find_by_loc = function(name) {
   return false;
 };
 
+Map.prototype.inconsistent_in_loc = function(name) {
+  //TODO
+};
 module.exports = Map;
