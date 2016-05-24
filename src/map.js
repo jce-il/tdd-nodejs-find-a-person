@@ -50,5 +50,10 @@ Map.prototype.avg=function(num1,num2,num3)
     return (num1+num2+num3)/3;
 };
 
+
+Map.prototype.find_location = function(name){
+  	return false;
+  }; 
+
 module.exports = Map;
 

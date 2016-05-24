@@ -82,3 +82,16 @@ describe('A average of 3 numbers',function(){
        expect(res).to.be.eql(70);
        });        
 });
+
+
+
+
+//Test num 8  : avg of 3 numbers
+
+describe('Find a Person',function(){
+       it('Given a name, check if the map includes a location information for it (a place or geo. location)',function(){
+      	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+      	var loc = map.find_location("or A.")
+      	expect(loc).to.be.eql(true);
+      	});
+      });     
