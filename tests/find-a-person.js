@@ -86,15 +86,16 @@ describe('A average of 3 numbers',function(){
 
 
 
-//Test num 8  : avg of 3 numbers
+//Test num 8 
 
-describe('Find a Person',function(){
-       it('Given a name, check if the map includes a location information for it (a place or geo. location)',function(){
-      	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-      	var loc = map.find_location("or A.")
-      	expect(loc).to.be.eql(true);
-      	});
-      });     
+describe('Check if have location', function() {
+   it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+     var locationExist = map.check_location("Or A.");
+     expect(locationExist).to.be.eql(true);
+   });
+ }); 
+
 
 
 
