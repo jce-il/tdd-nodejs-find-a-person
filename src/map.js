@@ -12,4 +12,9 @@ Map.prototype.find_a_person = function(name) {
   }
   return result;
 };
+
+Map.prototype.find_by_loc = function(name) {
+  //TODO
+};
+
 module.exports = Map;
