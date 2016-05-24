@@ -75,3 +75,24 @@ describe('A average of 3 numbers',function(){
        expect(res).to.be.eql(70);
        });        
 });
+
+//Test num 8 : Find a person
+
+describe('Find a Person',function(){
+       it('Given a name, check if the map includes a location information for it (a place or geo. location)',function(){
+      	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+      	var loc = map.find_location("or A.")
+      	expect(loc).to.be.eql(true);
+      	});
+      });     
+
+
+//Test num 9 : Check the map inconsistencies
+/*
+describe('A test for map inconsistense',function(){
+ it('Check if there are map inconsistencies, e.g., the same name with different locations',function(){
+ 		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+  		var inc = map.find_inconsistencies("or A.")
+  		expect(inc).to.be.eql(true);
+  	})
+});*/
