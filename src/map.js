@@ -64,7 +64,14 @@ Map.prototype.avg=function(num1,num2,num3)
 
  Map.prototype.map_inconsistencies = function(name) {
 
-  	return false;
+  	 	var posts_contain_person_name = [];
+ 	for(i=0; i<this._posts.length; i++)
+ 	{
+ 		if(this._posts[i].includes(name))
+ 			posts_contain_person_name.push(this._posts[i]);
+ 	}
+ 	if(posts_contain_person_name.length > 1)
+ 		return true;
   };
 
 module.exports = Map;
