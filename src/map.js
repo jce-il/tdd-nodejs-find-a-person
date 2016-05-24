@@ -62,8 +62,9 @@ Map.prototype.avg=function(num1,num2,num3)
   };
 
 
-Map.prototype.find_inconsistencies = function(name){
-  	return true;
+ Map.prototype.map_inconsistencies = function(name) {
+
+  	return false;
   };
 
 module.exports = Map;
