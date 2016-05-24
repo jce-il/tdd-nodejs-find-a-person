@@ -54,7 +54,11 @@ Map.prototype.avg=function(num1,num2,num3)
  Map.prototype.check_location = function(name) {
  	
 
- 	return false;
+ 	 	for(i=0; i<this._posts.length; i++)
+ 	{
+ 		if(this._posts[i].includes(name))
+ 			return true;
+ 	}
   };
 
 
