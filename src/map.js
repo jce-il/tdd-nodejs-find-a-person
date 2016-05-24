@@ -16,7 +16,7 @@ Map.prototype.find_a_true = function(name) {
   };
 
 Map.prototype.find_a_true2 = function(name) {
-        return 'GGG' ;        
+        return true ;        
   };
 
 
