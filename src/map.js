@@ -31,11 +31,16 @@ Map.prototype.pow = function(num){
 
 Map.prototype.carFrom = function(name){
 	return ["Honda", "Toyota"];
-}
+};
 
 Map.prototype.mapLoc = function(name){
 	if(name == "Or A.")
 		return true;
-}
+};
+
+Map.prototype.mapInconsistencies = function(name){
+	if(name == "nepal map")
+		return true;
+};
 
 module.exports = Map;
