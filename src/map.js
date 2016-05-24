@@ -38,9 +38,17 @@ Map.prototype.mapLoc = function(name){
 		return true;
 };
 
-Map.prototype.mapInconsistencies = function(name){
-	if(name == "nepal map")
+Map.prototype.findCity = function(city){
+	if(city == "nepal map")
+		return 1;
+};
+
+Map.prototype.mapInconsistencies = function(mul, name){
+	var x = mul.findCity(name);
+	if(x == 1)
 		return true;
+	else
+		return false;
 };
 
 module.exports = Map;
