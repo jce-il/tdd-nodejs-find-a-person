@@ -88,11 +88,11 @@ describe('Check if have location', function() {
 
 
 //Test num 9 : Check the map inconsistencies
-/*
-describe('A test for map inconsistense',function(){
- it('Check if there are map inconsistencies, e.g., the same name with different locations',function(){
- 		var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-  		var inc = map.find_inconsistencies("or A.")
-  		expect(inc).to.be.eql(true);
-  	})
-});*/
+
+describe('Check if the map inconsistencies', function() {
+   it('Check if there are map inconsistencies, e.g., the same name with different locations.', function() {
+     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+     var iSinconsistencies = map.map_inconsistencies("Or A.")
+     expect(iSinconsistencies).to.be.eql(true);
+   });
+  });
