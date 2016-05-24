@@ -11,7 +11,14 @@ describe('Find a person', function() {
 describe('Find by Location', function() {
   it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-    var posts = map.find_a_person("Or A.")
+    var posts = map.find_by_loc("Or A.")
+    expect(posts).to.be.eql(true);
+  });
+});
+describe('Map Inconsistencies', function() {
+  it('Check if there are map inconsistencies', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var posts = map.inconsistent_in_loc("Or A.")
     expect(posts).to.be.eql(true);
   });
 });
