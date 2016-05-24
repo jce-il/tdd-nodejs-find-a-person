@@ -49,4 +49,28 @@ Map.prototype.avg=function(num1,num2,num3)
     return (num1+num2+num3)/3;
 };
 
+
+Map.prototype.check_location = function(name) 
+{
+    for(i=0; i<this._posts.length; i++)
+ 	{
+ 		if(this._posts[i].includes(name))
+ 			return true;
+ 	}
+};
+
+
+ Map.prototype.map_inconsistencies = function(name) 
+ {
+
+  	 	var posts_contain_person_name = [];
+ 	for(i=0; i<this._posts.length; i++)
+ 	{
+ 		if(this._posts[i].includes(name))
+ 			posts_contain_person_name.push(this._posts[i]);
+ 	}
+ 	if(posts_contain_person_name.length > 1)
+ 		return true;
+  };
+
 module.exports = Map;
