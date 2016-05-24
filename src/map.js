@@ -20,6 +20,8 @@ Map.prototype.find_by_loc = function(name) {
 };
 
 Map.prototype.inconsistent_in_loc = function(name) {
-  //TODO
+  if(this.find_a_person(name).length >= 2)
+    return true;
+  return false;
 };
 module.exports = Map;
