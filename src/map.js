@@ -24,12 +24,11 @@ Map.prototype.find_by_location = function(name) {
 
   
 Map.prototype.find_inconsistencies = function(name){
-  	return true;
+	if(this.find_a_person(name).length>1)
+		return true;
+	return false;
 };
 
-Map.prototype.find_any_collaboration = function(name){
-   	return true;
-};
 
 module.exports = Map;
 
