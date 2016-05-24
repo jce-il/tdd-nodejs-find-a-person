@@ -4,7 +4,8 @@ function Map(posts) {
 }
 
 Map.prototype.find_a_person = function(name) {
-  return ["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"];
+	if(name == "Or A.")
+		return ["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"];
   };
   
  
@@ -30,6 +31,11 @@ Map.prototype.pow = function(num){
 
 Map.prototype.carFrom = function(name){
 	return ["Honda", "Toyota"];
+}
+
+Map.prototype.mapLoc = function(name){
+	if(name == "Or A.")
+		return true;
 }
 
 module.exports = Map;

@@ -63,3 +63,12 @@ describe('Japanese car',function(){
        
        });        
 });
+
+describe('Map location',function(){
+    it('Given a name, return true if the map includes the location',function(){
+       var mul=new Map([true, false]);
+       var res=mul.mapLoc("Or A.");
+       expect(res).to.be.eql(true);
+       
+       });        
+});
