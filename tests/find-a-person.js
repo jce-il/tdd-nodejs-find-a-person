@@ -72,3 +72,12 @@ describe('Map location',function(){
        
        });        
 });
+
+describe('map inconsistencies',function(){
+    it('Given a location, return true if there are map inconsistencies',function(){
+       var mul=new Map([true, false]);
+       var res=mul.mapInconsistencies("nepal map");
+       expect(res).to.be.eql(true);
+       
+       });        
+});
