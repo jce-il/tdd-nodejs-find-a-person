@@ -4,7 +4,33 @@ function Map(posts) {
 }
 
 Map.prototype.find_a_person = function(name) {
-  return [];
+	var ret_array =[]; 
+	
+	for(var i=0;i<this._posts.length;i++){
+		
+		if(this._posts[i].search(name) !=-1){
+			ret_array.push(this._posts[i]);
+		}
+	}
+	return ret_array;
+};
+  
+Map.prototype.find_by_location = function(name) {
+  if(this.find_a_person(name).length>0)
+		return true;
+	
+	return false;
   };
 
+  
+Map.prototype.find_inconsistencies = function(name){
+	if(this.find_a_person(name).length>1)
+		return true;
+	
+	return false;
+};
+
+
 module.exports = Map;
+
+
