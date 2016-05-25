@@ -24,7 +24,7 @@ Map.prototype.find_inconsistencies = function(name){
     return false;
 };
 
-Map.prototype.find_any_collaboration = function(name){
-   	return true;
+Map.prototype.remove_a_posts_by_name = function(name) {
+    return false; 
 };
 module.exports = Map;
