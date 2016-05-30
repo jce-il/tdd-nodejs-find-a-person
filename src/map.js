@@ -15,6 +15,17 @@ Map.prototype.find_a_person = function(name) {
   
   };
 
+  Map.prototype.Is_there_location = function(name) {
+	
+		return true;
+
+
+
+  };
+  
+  
+  
+  
   /*
  Map.prototype.include_location = function(name) 
 {
