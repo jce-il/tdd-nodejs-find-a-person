@@ -9,6 +9,16 @@ describe('Find a person', function() {
     expect(posts).to.be.eql(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley"]);
   });
     
+    it('return true if OR A.is the intput)', function() {
+    var map = new Map([true,false]);
+    var posts = map.find_a_person_2("Or A.")
+    expect(posts).to.be.eql(true);
+  });
+    it('return true if the input is a the input is a place that is in 2 diffrent places, but has the same name)', function() {
+    var map = new Map([true,false]);
+    var posts = map.find_a_person_3("nepal map")
+    expect(posts).to.be.eql(true);
+  });
      it('power number)', function() {
     var map = new Map([2,3,4,8,16]);
     var posts = map.powNum(8)
