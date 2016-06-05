@@ -28,7 +28,7 @@ return false;
 
   };*/
 
-Map.prototype.find_a_person_by_different_locations = function(name) {
+Map.prototype.find_a_person_by_different_locations= function(name) {
 
 
 return false;
