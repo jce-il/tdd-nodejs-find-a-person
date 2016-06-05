@@ -19,4 +19,5 @@ for(var i=0;i<this._posts.length;i++)
 
   };
 
+
 module.exports = Map;
