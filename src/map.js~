@@ -34,10 +34,10 @@ for(var i=0;i<this._posts.length;i++)
 	if(this._posts[i].indexOf(name)!=-1&& (  this._posts[i].indexOf("at")!=-1||this._posts[i].indexOf("in")!=-1 )  )//key words of locations
           len++;
 
-if(len>1)
+if(len==1)
 	return true;//we can assume if the returned array length is bigger than 1 there are different locations
 
-//return false;
+return false;
 
 
   };
