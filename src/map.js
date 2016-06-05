@@ -28,19 +28,19 @@ return false;
 
   };
 
-/*Map.prototype.find_a_person_by_different_locations= function(name) {
+Map.prototype.find_a_person_by_different_locations= function(name) {
 var len=0;
 for(var i=0;i<this._posts.length;i++)
 	if(this._posts[i].indexOf(name)!=-1&& (  this._posts[i].indexOf("at")!=-1||this._posts[i].indexOf("in")!=-1 )  )//key words of locations
           len++;
 
-if(len>1)
+if(len==1)
 	return true;//we can assume if the returned array length is bigger than 1 there are different locations
 
 return false;
 
 
-  };*/
+  };
 
 
 module.exports = Map;
