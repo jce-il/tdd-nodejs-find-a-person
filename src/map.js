@@ -8,6 +8,9 @@ Map.prototype.find_a_person = function(name) {
 };
 
 Map.prototype.find_location = function(name){
+	if(this.find_a_person(name).length > 0)
+		return true;
+	else
 		return false;
 }; 
 Map.prototype.find_inconsistencies = function(name){
