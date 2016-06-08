@@ -14,6 +14,9 @@ Map.prototype.find_location = function(name){
 		return false;
 }; 
 Map.prototype.find_inconsistencies = function(name){
+	if(this.find_a_person(name).length > 1)
+		return true;
+	else
 		return false;
 };
 Map.prototype.find_any_collaboration = function(name){
