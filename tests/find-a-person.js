@@ -28,5 +28,11 @@ describe('Find a person', function() {
 		var isAppear = map.is_name_show_by_post("Or A.");
 		expect(isAppear).to.be.eql(true);
 	});
+    
+    it('Check if there are any Collaboration',function(){
+ 	 var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+ 	 var col = map.find_any_collaboration("or A.")
+ 	 expect(col).to.be.eql(true);
+ 	});
  
 });
