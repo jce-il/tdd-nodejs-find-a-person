@@ -34,7 +34,9 @@ Map.prototype.is_name_show_by_post = function(name) {
  		return false; 
  	}
  
-
+Map.prototype.find_any_collaboration = function(name){
+    return true;
+ };
 
 
 
