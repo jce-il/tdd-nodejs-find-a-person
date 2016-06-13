@@ -19,11 +19,15 @@ Map.prototype.find_a_location = function(name) {
  return false;
  };
 
-Map.prototype.remove_a_posts_by_name = function(name) {
-     var posts = [];
-     
-     return posts; 
- };
+Map.prototype.find_inconsistencies = function(name)
+{
+	if(this.find_a_person(name).length > 1)
+		return false;
+	else
+		return true;
+};
+
+
 
 
 module.exports = Map;
