@@ -19,5 +19,11 @@ Map.prototype.find_a_location = function(name) {
  return false;
  };
 
+Map.prototype.remove_a_posts_by_name = function(name) {
+     var posts = [];
+     
+     return posts; 
+ };
+
 
 module.exports = Map;
