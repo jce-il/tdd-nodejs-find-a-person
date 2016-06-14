@@ -10,6 +10,16 @@ Map.prototype.find_a_person = function(name)
 };
 
 
+Map.prototype.find_a_person_2 = function(name) {
+  return true;
+  };
+
+
+Map.prototype.find_a_person_3 = function(name) {
+  return true;
+  };
+
+
 Map.prototype.powNum = function(num) 
 {
     return num * num;

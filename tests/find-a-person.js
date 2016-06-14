@@ -12,6 +12,20 @@ describe('Find a person', function()
     });
     
     
+    it('return true if the input is a the input is a place that is in 2 diffrent places, but has the same name)', function() {
+    var map = new Map([true,false]);
+    var posts = map.find_a_person_3("nepal map")
+    expect(posts).to.be.eql(true);
+  });
+    
+    
+     it('power number)', function() {
+    var map = new Map([2,3,4,8,16]);
+    var posts = map.powNum(8)
+    expect(posts).to.be.eql(64);
+  });
+    
+    
      it('Given a number, return the power of it', function() 
     {
         var map = new Map([2,16,4,7]);
