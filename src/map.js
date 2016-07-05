@@ -12,7 +12,7 @@ Map.prototype.find_a_person = function(name) {
     });
     return result;
 };
-
+//find if a name exists in a specific location on post
 Map.prototype.find_person_and_location = function(name) {
 	var flag = false;
 	this._posts.forEach(function (item) {
