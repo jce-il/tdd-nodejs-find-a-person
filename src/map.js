@@ -21,4 +21,8 @@ Map.prototype.find_person_and_location = function(name) {
     });
 	return flag;
 };
+
+Map.prototype.check_map_inconsistencies = function() {
+	return true;
+};
 module.exports = Map;
