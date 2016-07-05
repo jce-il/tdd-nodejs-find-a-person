@@ -14,11 +14,11 @@ Map.prototype.find_a_person = function(name) {
 };
 
 Map.prototype.find_person_and_location = function(name) {
-
-	posts.forEach(function (item) {
+	var flag = false;
+	this._posts.forEach(function (item) {
         if (item.indexOf(name) > 0 && item.indexOf(" at ") > 0)
-            return true;
+            flag = true;
     });
-	return false;
+	return flag;
 };
 module.exports = Map;
