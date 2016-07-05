@@ -1,3 +1,4 @@
+var names = ["Or A.","Or B.","Or C.", "Lea"];
 
 function Map(posts) {
   this._posts = posts;
@@ -23,6 +24,17 @@ Map.prototype.find_person_and_location = function(name) {
 };
 
 Map.prototype.check_map_inconsistencies = function() {
-	return true;
+	var flag = false;
+	var myPost = this._posts;
+    names.forEach(function (name) {
+         var cnt = 0;
+         myPost.forEach(function (item) {
+             if (item.indexOf(name) > 0 && item.indexOf(" at ") > 0)
+                 cnt++;
+         });
+         if(cnt >1)
+             flag = true;
+     });
+     return flag;
 };
 module.exports = Map;
