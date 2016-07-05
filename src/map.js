@@ -15,6 +15,10 @@ Map.prototype.find_a_person = function(name) {
 
 Map.prototype.find_person_and_location = function(name) {
 
-	return true;
+	posts.forEach(function (item) {
+        if (item.indexOf(name) > 0 && item.indexOf(" at ") > 0)
+            return true;
+    });
+	return false;
 };
 module.exports = Map;
