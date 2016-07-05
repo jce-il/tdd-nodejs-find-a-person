@@ -1,3 +1,7 @@
+//ex4
+//By Lea Bloy
+// implementats posts module 
+ 
 var names = ["Or A.","Or B.","Or C.", "Lea"];
 
 function Map(posts) {
@@ -13,6 +17,7 @@ Map.prototype.find_a_person = function(name) {
     });
     return result;
 };
+
 //find if a name exists in a specific location on post
 Map.prototype.find_person_and_location = function(name) {
 	var flag = false;
@@ -23,6 +28,7 @@ Map.prototype.find_person_and_location = function(name) {
 	return flag;
 };
 
+// check if the map have inconsistencies
 Map.prototype.check_map_inconsistencies = function() {
 	var flag = false;
 	var myPost = this._posts;
