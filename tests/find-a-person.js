@@ -47,4 +47,11 @@ describe('Check if there are map inconsistencies', function () {
         expect(posts).to.be.eql(true);
     });
 });
+describe('Check if there are map inconsistencies with another person', function () {
+    it('Check if there are map inconsistencies, e.g., the same name with different locations', function () {
+        var map = new Map(["I met Lea at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+        var posts = map.check_map_inconsistencies()
+        expect(posts).to.be.eql(false);
+    });
+});
 
