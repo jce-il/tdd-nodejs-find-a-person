@@ -11,6 +11,10 @@ Map.prototype.find_a_person = function(name) {
             result.push(item);
     });
     return result;
-  };
+};
 
+Map.prototype.find_person_and_location = function(name) {
+
+	return true;
+};
 module.exports = Map;
