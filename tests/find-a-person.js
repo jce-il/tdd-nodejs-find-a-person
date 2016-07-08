@@ -18,10 +18,26 @@
    });
  });
  
-describe('Find a person in location', function() {
+describe('Find a person in location return true', function() {
    it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
      var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
      var res = map.check_if_person_in_location("Or A.")
     expect(res).to.be.true;
+   });
+ });
+ 
+describe('Find a person in location return true 2', function() {
+   it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+     var map = new Map(["I met Or A. at Chabad house Nepal", "We found Or A. R.I.P at Langtang", "Random post"]);
+     var res = map.check_if_person_in_location("Or A.")
+     expect(res).to.be.true;
+   });
+ });
+ 
+ describe('Find a person in location return false', function() {
+   it('Given a name, check if the map includes a location information for it (a place or geo. location)', function() {
+     var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+     var res = map.check_if_person_in_location("Random")
+     expect(res).to.be.false;
    });
  });
