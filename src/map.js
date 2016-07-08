@@ -20,4 +20,8 @@ function Map(posts) {
   	return false;
  };
  
+ Map.prototype.check_inconsistencies = function() {
+ 	return false;
+ };
+ 
 module.exports = Map;
