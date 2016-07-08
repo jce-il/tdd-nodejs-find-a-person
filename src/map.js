@@ -29,5 +29,9 @@ var locations = ["Israel", "Bangkok", "Langtang valley"];
  	return res;
  
    };
+   
+   Map.prototype.check_map_inconsistencies = function() {
+ 	return null;
+   };
  
   module.exports = Map;
