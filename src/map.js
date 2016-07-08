@@ -22,6 +22,7 @@ var locations = ["Israel", "Bangkok", "Langtang valley"];
  				if (value.indexOf(location) > -1)
  					res = true;	
  			});
+			res =  res || (value.indexOf(" at ") > -1)
  		}
    		
  	}); 	
