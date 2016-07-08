@@ -13,7 +13,11 @@ function Map(posts) {
  };
  
  Map.prototype.find_a_person_with_location = function(name) {
- 	return false;
+ 		for (var i=0; i<this._posts.length; i++)
+ 		if (this._posts[i].indexOf(name) >= 0 && this._posts[i].indexOf(" at ") >= 0)
+ 			return true;
+ 
+  	return false;
  };
  
 module.exports = Map;
