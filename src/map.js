@@ -11,4 +11,9 @@ function Map(posts) {
  			arr.push(this._posts[i]);
  	return arr;
  };
+ 
+ Map.prototype.find_a_person_with_location = function(name) {
+ 	return false;
+ };
+ 
 module.exports = Map;
