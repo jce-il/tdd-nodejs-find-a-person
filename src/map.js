@@ -1,4 +1,4 @@
-
+var locations = ["Israel", "Bangkok", "Langtang valley"];
  function Map(posts) {
    this._posts = posts;
   }
@@ -17,8 +17,11 @@
  
 	var res = false;	
  	this._posts.forEach(function(value) {
- 		if (value.indexOf(name) > -1 ) {
- 			res =  value.indexOf(" at ") > -1;
+ 		if (value.indexOf(name) > -1 ) {	
+ 			locations.forEach(function(location) {
+ 				if (value.indexOf(location) > -1)
+ 					res = true;	
+ 			});
  		}
    		
  	}); 	
