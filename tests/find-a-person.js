@@ -34,7 +34,7 @@ describe('Are there inconsistencies' , function() {
  it('Given a person name, return TRUE if the map includes the same name with different locations', function(){
 
  	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-	var posts = map.are_there_inconsistencies("Or A.");
+	var posts = map.are_there_inconsistencies();
 	expect(posts).to.be.eql(true);
  });
 

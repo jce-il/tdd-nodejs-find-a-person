@@ -22,7 +22,23 @@ var post = this._posts.filter(function(s){return s.indexOf(name) != -1 && s.inde
 
 Map.prototype.are_there_inconsistencies = function(name) {
 
-var post = this._posts.filter(function(s){return s.indexOf(name) != -1 && s.indexOf('at ') != -1;});
+var names = ["Or A."];
+var flag;
+var posts = this._posts;
+
+names.forEach(function(name){
+	
+	flag = false;
+	posts.forEach(function(post)
+	{
+		if(post.indexOf(name) != -1)
+			flag = true;
+		else
+			if(flag)
+				return false;
+	});
+	
+});
 
 	return true;
   };
