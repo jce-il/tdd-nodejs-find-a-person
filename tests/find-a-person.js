@@ -23,7 +23,18 @@ describe('Is there location' , function() {
  it('Given a person name, return TRUE if the map includes a location information for it (a place or geo. location)', function(){
 
  	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
-	var posts = map.is_there_location("Or A.")
+	var posts = map.is_there_location("Or A.");
+	expect(posts).to.be.eql(true);
+ });
+
+});
+
+describe('Are there inconsistencies' , function() {
+
+ it('Given a person name, return TRUE if the map includes the same name with different locations', function(){
+
+ 	var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+	var posts = map.are_there_inconsistencies("Or A.");
 	expect(posts).to.be.eql(true);
  });
 
