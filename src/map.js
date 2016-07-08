@@ -13,4 +13,9 @@
  	return array;
     };
   
+    Map.prototype.check_if_person_in_location = function(name) {
+ 	
+ 	return null;
+   };
+ 
   module.exports = Map;
