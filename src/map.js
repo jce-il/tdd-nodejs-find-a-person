@@ -14,8 +14,9 @@ Map.prototype.find_a_person = function(name) {
 
 Map.prototype.is_there_location = function(name) {
 
+var post = this._posts.filter(function(s){return s.indexOf(name) != -1 && s.indexOf('at ') != -1;});
 
-	return true;
+	return post.length != 0;
   };
 
 module.exports = Map;
