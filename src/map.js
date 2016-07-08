@@ -18,5 +18,13 @@ var post = this._posts.filter(function(s){return s.indexOf(name) != -1 && s.inde
 
 	return post.length != 0;
   };
+  
+
+Map.prototype.are_there_inconsistencies = function(name) {
+
+var post = this._posts.filter(function(s){return s.indexOf(name) != -1 && s.indexOf('at ') != -1;});
+
+	return true;
+  };
 
 module.exports = Map;
