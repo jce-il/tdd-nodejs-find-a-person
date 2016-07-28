@@ -1,3 +1,4 @@
+//Netanel Amiel 303136972
 
 function Map(posts) {
   this._posts = posts;
@@ -5,6 +6,7 @@ function Map(posts) {
 
 Map.prototype.find_a_person = function(name) {
   return [];
+
   };
 
 module.exports = Map;
