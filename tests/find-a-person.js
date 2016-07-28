@@ -14,4 +14,15 @@ describe('Find a person', function() {
     var location_exsit = map.find_a_location("Or A.")
     expect(location_exsit).to.be.eql(true);
   });
+  it('Check if there are map inconsistencies the same name with different locations', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var inconsistencies = map.isInconsistencies("Or A.");
+    expect(inconsistencies).to.be.eql(true);
+  });
+
+  it('Check if there are map inconsistencies then remove all the problematic posts', function() {
+    var map = new Map(["I met Or A. at Chabad house Bangkok", "We found Or A. R.I.P at Langtang valley", "Random post"]);
+    var posts = map.remove_posts("Or A.");
+    expect(posts).to.be.eql(["Random post"]);
+  });
 });

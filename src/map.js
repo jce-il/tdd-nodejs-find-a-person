@@ -22,4 +22,8 @@ Map.prototype.find_a_location = function(name) {
   return false;
 };
 
+Map.prototype.isInconsistencies = function(name) {
+   return false;
+};
+
 module.exports = Map;
