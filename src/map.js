@@ -30,4 +30,9 @@ Map.prototype.isInconsistencies = function(name) {
   return false;
 };
 
+Map.prototype.remove_posts = function(name) {
+
+  return [];
+  };
+
 module.exports = Map;
