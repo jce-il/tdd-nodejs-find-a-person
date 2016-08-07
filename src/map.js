@@ -6,7 +6,8 @@ function Map(posts) {
 Map.prototype.find_a_person = function(name) {
  var arr = [];
  	for (var i=0; i<this._posts.length; i++)
- 		if (this._posts[i].indexOf(name) >= 0)
+ 		//check if name is in the beginning of a post, or in a middle or end of a post but whole word (add a pictive space to support name in the end of a post)
+ 		if (this._posts[i].indexOf(name) == 0 || (this._posts[i] + " ").indexOf(" " + name + " ") > 0)
  			arr.push(this._posts[i]);
    return arr;
 
